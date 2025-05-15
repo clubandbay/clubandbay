@@ -1,0 +1,36 @@
+.subheader {
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 20px;
+    font-size: 14px;
+    align-items: center;
+  }
+  
+.social-icons {
+    display: flex;
+    gap: 10px;
+  }
+  
+.icon-box {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 6px; /* use 50% if you want them circular */
+    background-color: white;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+  }
+  
+.icon-box:hover {
+    background-color: #e0e0e0;
+  }
+  
+  
+  .contact-number {
+    font-weight: bold;
+  }
+  

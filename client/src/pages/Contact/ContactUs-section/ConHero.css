@@ -1,0 +1,24 @@
+.con-hero {
+  background-image: url('/header_img.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  height: 80vh;        
+  width: 100%;          
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.con-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.con-hero p {
+  font-size: 1.5rem;
+}

@@ -1,0 +1,34 @@
+.services-page {
+  padding: 60px 5vw;
+  background-color: #fefefe;
+  text-align: center;
+}
+
+.services-page h2 {
+  font-size: 2.5vw;
+  margin-bottom: 40px;
+}
+
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.service-box {
+  background: #fafafa;
+  padding: 30px;
+  border-radius: 12px;
+  width: 280px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+.service-box h3 {
+  font-size: 1.3vw;
+  margin-bottom: 15px;
+}
+
+.service-box p {
+  font-size: 1vw;
+}
