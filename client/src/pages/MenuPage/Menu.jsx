@@ -14,6 +14,8 @@ const Menu = () => {
         <li>Saturday: Mix Veg + Roti</li>
         <li>Sunday: Special Thali</li>
       </ul>
+
+      
     </section>
   );
 };
