@@ -1,9 +1,9 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
-import { 
-  FaPizzaSlice, FaHamburger, FaIceCream, FaGlassWhiskey, 
-  FaFish, FaLeaf, FaStar, FaArrowRight 
+import {
+  FaPizzaSlice, FaHamburger, FaIceCream, FaGlassWhiskey,
+  FaFish, FaLeaf, FaStar, FaArrowRight
 } from 'react-icons/fa';
 import foodApi from '../../assets/data/foodData';
 
@@ -50,14 +50,20 @@ const MenuContent = () => {
       </div>
 
       <div className="container !mx-auto !px-4 relative z-10">
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
           className="text-center !mb-16"
         >
-          <h2 className="text-4xl font-bold text-[#0b3171] !mb-4 font-cursive">Our Menu</h2>
+          <div className="flex items-center justify-center gap-4 flex-wrap">
+            <div className="hidden sm:block w-14 h-[2px] bg-[#e7b745]"></div>
+            <h2 className="text-4xl font-bold text-[#0b3171] !mb-4 font-cursive italic whitespace-nowrap">
+              Special Menu
+            </h2>
+            <div className="hidden sm:block w-14 h-[2px] bg-[#e7b745]"></div>
+          </div>
           <p className="text-gray-600 max-w-2xl !mx-auto">
             Carefully crafted dishes made with the finest ingredients
           </p>
@@ -72,18 +78,17 @@ const MenuContent = () => {
                 ref={el => tabsRef.current[index] = el}
                 data-category={category.id}
                 onClick={() => setActiveTab(category.id)}
-                className={`flex items-center !px-6 !py-3 rounded-full transition-all duration-300 whitespace-nowrap ${
-                  activeTab === category.id 
-                    ? 'text-white bg-[#0b3171] shadow-lg' 
-                    : 'text-gray-600 hover:text-[#e7b745] bg-white bg-opacity-70 backdrop-blur-sm'
-                }`}
+                className={`flex items-center !px-6 !py-3 rounded-full transition-all duration-300 whitespace-nowrap ${activeTab === category.id
+                    ? '!text-black !bg-transparent'
+                    : '!text-black !bg-transparent hover:text-[#e7b745] bg-opacity-70 backdrop-blur-sm'
+                  }`}
               >
                 <span className="!mr-2 text-xl">{category.icon}</span>
                 <span className="font-medium">{category.name}</span>
               </button>
             ))}
           </div>
-          
+
           <motion.div
             className="absolute bottom-0 h-1 bg-[#e7b745] rounded-full shadow-lg"
             initial={false}
@@ -113,8 +118,8 @@ const MenuContent = () => {
                 onClick={() => handleItemClick(activeTab, item.slug)}
               >
                 <div className="relative h-72 overflow-hidden">
-                  <img 
-                    src={item.image} 
+                  <img
+                    src={item.image}
                     alt={item.name}
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                   />
@@ -130,13 +135,13 @@ const MenuContent = () => {
                     </div>
                   </div>
                 </div>
-                
+
                 <div className="bg-white !p-6 relative">
                   <div className="absolute top-0 left-0 w-12 h-12 border-t-4 border-l-4 border-[#e7b745] rounded-tl-lg"></div>
                   <div className="absolute bottom-0 right-0 w-12 h-12 border-b-4 border-r-4 border-[#0b3171] rounded-br-lg"></div>
-                  
+
                   <p className="text-gray-600 relative z-10 !mb-4">{item.description}</p>
-                  
+
                   <button className="flex items-center text-[#0b3171] font-bold hover:text-[#e7b745] transition">
                     View Details <FaArrowRight className="!ml-2" />
                   </button>

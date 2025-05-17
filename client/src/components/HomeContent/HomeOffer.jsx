@@ -2,8 +2,7 @@ import React from "react";
 import { FaTags, FaArrowRight } from "react-icons/fa";
 import foodImage from "../../assets/offerfood.png";
 import {
-  FaPizzaSlice, FaHamburger, FaIceCream, FaGlassWhiskey,
-  FaFish, FaLeaf, FaUtensils, FaPepperHot, FaCheese, FaWineBottle
+  FaPizzaSlice, FaHamburger, FaIceCream, FaLeaf, FaUtensils
 } from 'react-icons/fa';
 import { GiChickenLeg, GiSushis, GiFruitBowl, GiCoffeeCup } from 'react-icons/gi';
 import { motion } from "framer-motion";

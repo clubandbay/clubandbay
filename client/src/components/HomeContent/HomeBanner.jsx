@@ -41,7 +41,7 @@ const HomeBanner = () => {
   };
 
   return (
-    <section className="w-full bg-gradient-to-br from-[#fffaf0] to-[#fff5e6] !py-16 !px-4 md:!px-16 flex flex-col lg:flex-row items-center justify-between gap-12 relative overflow-hidden">
+    <section className="w-full bg-gradient-to-br from-white to-gray-100 !py-16 !px-4 md:!px-16 flex flex-col lg:flex-row items-center justify-between gap-12 relative overflow-hidden">
       {/* Floating food icons */}
       <div className="absolute inset-0 pointer-events-none">
         <motion.div
