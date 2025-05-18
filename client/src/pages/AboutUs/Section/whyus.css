@@ -1,0 +1,83 @@
+.why-us {
+  padding: 60px 20px;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
+}
+
+.why-us h5 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #888;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.why-us .title {
+  font-size: 42px;
+  font-weight: 800;
+  margin-bottom: 50px;
+  color: #e7b745;
+  position: relative;
+  display: inline-block;
+}
+
+.why-us .title::after {
+  content: "";
+  display: block;
+  width: 350px;
+  height: 2px;
+  background-color: #e7b745;
+  margin: 10px auto 0;
+}
+
+.why-us-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.why-us-card {
+  background-color: #111;
+  padding: 30px 25px;
+  width: 320px;
+  border-radius: 6px;
+  transition: all 0.4s ease;
+  text-align: left;
+  color: #fff;
+}
+
+.card-number {
+  font-size: 28px;
+  color: #e7b745;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.card-title {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.card-desc {
+  font-size: 15px;
+  color: #999;
+  line-height: 1.6;
+}
+
+/* Hover effect with golden background and black text */
+.why-us-card:hover {
+  background-color: #e7b745;
+  transform: translateY(-5px);
+  color: #000;
+}
+
+.why-us-card:hover .card-title,
+.why-us-card:hover .card-desc,
+.why-us-card:hover .card-number {
+  color: #000;
+}

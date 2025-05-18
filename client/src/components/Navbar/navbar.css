@@ -10,7 +10,7 @@ html {
   justify-content: space-between;
   align-items: center;
   padding: 15px 15px;
-  background-color: white;
+  background-color: #0b3171;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
 
@@ -23,7 +23,7 @@ html {
   display: flex;
   list-style: none;
   gap: 20px;
-  color: #49557e;
+  color: #ECF0F1;
   font-size: 18px;
   font-weight: 500;
   margin-left: 30px;
@@ -42,7 +42,7 @@ html {
 }
 
 .navbar-menu .active a {
-  border-bottom: 2px solid #49557e;
+  border-bottom: 2px solid #e7b745;
 }
 
 /* underline */
@@ -53,7 +53,7 @@ html {
   bottom: 0;
   width: 0%;
   height: 2px;
-  background-color: #49557e;
+  background-color: #e7b745;
   transition: width 0.3s;
 }
 
@@ -75,8 +75,8 @@ html {
 .navbar button {
   background: transparent;
   font-size: 16px;
-  color: #49557e;
-  border: 1px solid tomato;
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
   padding: 8px 25px;
   border-radius: 25px;
   cursor: pointer;
@@ -84,7 +84,7 @@ html {
 }
 
 .navbar button:hover {
-  background-color: #fff4f2;
+  background-color: #3f82e6;
 }
 
 /* section scroll targets */

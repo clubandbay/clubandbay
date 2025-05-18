@@ -1,5 +1,5 @@
 .footer {
-  background-color: #1e2b49;
+  background-color: #0b3171;/*0B3271 #0b316f*/
   color: #3a7bfd;
   padding: 40px 5vw;
   font-family: Arial, sans-serif;
@@ -20,8 +20,7 @@
 }
 
 .footer-logo img {
-  width: 90px;
-  border-radius: 50%;
+  width: 300px;
   margin-bottom: 15px;
 }
 
@@ -35,17 +34,17 @@
 
 .social-icons a:hover,
 .footer-column ul li a:hover {
-  color: #3a7bfd;
+  color: #e7b745;
 }
 
 .footer-column h4 {
   font-size: 1.25rem;
   font-weight: 700;
   margin-bottom: 12px;
-  border-bottom: 3px solid #3a7bfd;
+  border-bottom: 3px solid #e7b745;
   display: inline-block;
   padding-bottom: 4px;
-  color: #3a7bfd;
+  color: #e7b745;
 }
 
 .footer-column ul {
@@ -71,12 +70,12 @@
 }
 
 .footer-column ul li svg {
-  color: #3a7bfd;
+  color: #e7b745;
   min-width: 20px;
 }
 
 .footer-bottom {
-  border-top: 1px solid #3a7bfd;
+  border-top: 1px solid #e7b745;
   padding-top: 15px;
   text-align: center;
   color: white;

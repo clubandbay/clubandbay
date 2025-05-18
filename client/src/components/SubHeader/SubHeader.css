@@ -1,5 +1,5 @@
 .subheader {
-    background-color: #f4f4f4;
+    background-color: #05436941;
     display: flex;
     justify-content: space-between;
     padding: 8px 20px;
@@ -7,7 +7,7 @@
     align-items: center;
   }
   
-.social-icons {
+.social_icon {
     display: flex;
     gap: 10px;
   }
@@ -19,14 +19,14 @@
     justify-content: center;
     align-items: center;
     border: 1px solid #ccc;
-    border-radius: 6px; /* use 50% if you want them circular */
-    background-color: white;
+    border-radius: 6px;
+    background-color: #FFFFFF;
     transition: background-color 0.3s ease;
     cursor: pointer;
   }
   
 .icon-box:hover {
-    background-color: #e0e0e0;
+    background-color: #F1C40F;
   }
   
   

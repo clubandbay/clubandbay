@@ -15,7 +15,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-main">
         <div className="footer-column footer-logo">
-          <img src="/logo.png" alt="Food logo" />
+          <img src="/logo.jpg" alt="logo" />
           <div className="social-icons">
             <Link to="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
               <FaFacebookF />

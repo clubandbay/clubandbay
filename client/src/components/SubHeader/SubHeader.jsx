@@ -6,7 +6,7 @@ import './SubHeader.css';
 const SubHeader = () => {
   return (
     <div className="subheader">
-      <div className='social-icons'>
+      <div className='social_icon'>
          <a href='https://www.facebook.com' target='_blank' rel='noopener noreferrer' className='icon-box'>
             <FaFacebookF/>
          </a>
