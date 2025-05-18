@@ -44,7 +44,8 @@ a{
 
 .section_bg,
 .highlight_bg,
-.homemenu_bg {
+.homemenu_bg,
+.menuhero_bg {
   background-image: url("./assets/blackbg.jpg");
   background-size: cover;
   background-position: center;
@@ -56,6 +57,11 @@ a{
 
 .homemenu_bg{
   background-image: url("./assets/homemenu.jpg");
+}
+
+.menuhero_bg{
+  background-image: url("./assets/decobg.jpg");
+  background-attachment: fixed
 }
 
 /* Font faces */
