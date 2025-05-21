@@ -1,6 +1,5 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import SubHeader from './components/SubHeader/SubHeader';
 import Navbar from './components/Navbar/navbar';
 import Home from './pages/Home/Home';
 import MenuPage from './pages/MenuPage/MenuPage';
@@ -13,7 +12,6 @@ import FoodItemDetails from './pages/FoodItemDetails';
 const App = () => {
   return (
     <BrowserRouter>
-       <SubHeader/>
        <Navbar/>
 
        <Routes>

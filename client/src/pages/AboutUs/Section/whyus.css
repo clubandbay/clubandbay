@@ -54,6 +54,7 @@
   color: #e7b745;
   font-weight: 700;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .card-title {
@@ -61,12 +62,15 @@
   font-weight: 700;
   margin-bottom: 10px;
   color: #fff;
+  text-align: center;
+  text-decoration: underline #e7b745;
 }
 
 .card-desc {
   font-size: 15px;
   color: #999;
   line-height: 1.6;
+  text-align: center;
 }
 
 /* Hover effect with golden background and black text */
@@ -80,4 +84,5 @@
 .why-us-card:hover .card-desc,
 .why-us-card:hover .card-number {
   color: #000;
+  text-decoration: underline #000000;
 }

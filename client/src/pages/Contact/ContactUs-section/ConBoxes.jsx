@@ -6,8 +6,8 @@ const ConBoxes = () => {
   return (
     <section className="con-boxes">
       <div className="con-boxes-heading">
-        <h2>Get in touch now</h2>
-        <p>Get in touch with us through any of these channels</p>
+        <h2>We're Always Here to Serve You - Just Reach Out</h2>
+        <p>Whether you're planning a meal, booking a table, or just have a question, our friendly team is just a message away.<br/> Because great food starts with great service.</p>
       </div>
 
       <div className="boxes-container">
@@ -15,7 +15,7 @@ const ConBoxes = () => {
         <div className="box">
           <MdSupportAgent className="icon" />
           <h3>24/7 Support</h3>
-          <p>We’re always here to help you anytime.</p>
+          <p>We're always here to help you anytime.</p>
           <a href="/support" className="con-btn">Live Chat</a>
         </div>
 

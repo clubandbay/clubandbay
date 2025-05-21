@@ -17,13 +17,13 @@ const Footer = () => {
         <div className="footer-column footer-logo">
           <img src="/logo.jpg" alt="logo" />
           <div className="social-icons">
-            <Link to="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <Link to="https://facebook.com" target="_blank" className='border-2 !p-2 rounded-full' rel="noopener noreferrer" aria-label="Facebook">
               <FaFacebookF />
             </Link>
-            <Link to="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+            <Link to="https://twitter.com" target="_blank" className='border-2 !p-2 rounded-full' rel="noopener noreferrer" aria-label="Twitter">
               <FaTwitter />
             </Link>
-            <Link to="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <Link to="https://instagram.com" target="_blank" className='border-2 !p-2 rounded-full' rel="noopener noreferrer" aria-label="Instagram">
               <FaInstagram />
             </Link>
           </div>

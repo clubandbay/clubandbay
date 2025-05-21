@@ -51,6 +51,7 @@
   font-size: 3rem;
   color: #007BFF;
   transition: color 0.3s;
+  text-align: center;
 }
 
 .box:hover .icon {

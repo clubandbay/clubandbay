@@ -18,13 +18,16 @@ const Welcome = () => {
 
       <div className="welcome-content">
         <h1>
-          Welcome to <span role="img" aria-label="fork and knife">🍴</span> Restoran
+          Welcome to <span role="img" aria-label="fork and knife">🍴</span> Club & Bay
         </h1>
         <p>
-          Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos erat ipsum et lorem et sit, sed stet lorem sit.
-        </p>
-        <p>
-          Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet
+          A warm and inviting atmosphere awaits in this neighborhood cafe, where the 
+          friendly vibe of a club meets the tranquil feel of the bay. We are passionate 
+          about preparing delicious, high-quality food and drinks, always using fresh 
+          ingredients and adding our personal care.<br/> Whether individuals are looking for 
+          lively conversations, peaceful moments, or simply satisfying their cravings, 
+          we aim to create a comforting and enjoyable experience. Discover a perfect 
+          balance at Club &amp; Bay, a daily destination for good company and good food.
         </p>
         <div className="welcome-stats">
           <div className="stat">

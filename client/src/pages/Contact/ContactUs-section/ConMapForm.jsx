@@ -4,7 +4,7 @@ import { FaUser, FaPhone, FaEnvelope, FaServicestack } from 'react-icons/fa';
 
 const ConMapForm = () => {
   return (
-    <section className="map-form-section">
+    <section className="map-form-section ">
       <div className="map-container">
         <iframe
           title="Our Location"

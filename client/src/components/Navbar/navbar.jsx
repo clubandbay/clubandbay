@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './navbar.css';
 import { assets } from '../../assets/assets';
 import { Link, useLocation } from 'react-router-dom';
+import { FaFacebookF, FaTwitter, FaInstagram } from 'react-icons/fa';
 
 const Navbar = () => {
   const [menu, setMenu] = useState("home");
@@ -39,12 +40,27 @@ const Navbar = () => {
         </li>
       </ul>
 
-      <div className="navbar-right">
-        <img src={assets.search_icon} alt='Search' />
+      <div className="nav-right">
+            <div className='social_icon'>
+               <a href='https://www.facebook.com' target='_blank' rel='noopener noreferrer' className='icon-box'>
+                  <FaFacebookF/>
+               </a>
+               <a href="https://x.com" target="_blank" rel="noopener noreferrer" className="icon-box">
+                  <img
+                    src="/twitter_icon.png"
+                    alt="X (Twitter)"
+                    style={{ width: '20px', height: '20px' }}
+                  />
+              </a>
+              <a href='https://www.instagram.com' target='_blank' rel='noopener noreferrer' className='icon-box'>
+                  <FaInstagram/>
+              </a>
+            </div>
+
         <Link to='tel:+919876543210'>
           <button>Call Now</button>
         </Link>
-      </div>
+    </div>
     </div>
   );
 };

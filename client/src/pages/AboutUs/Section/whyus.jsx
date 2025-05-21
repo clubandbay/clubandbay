@@ -5,23 +5,23 @@ const WhyUs = () => {
   const cards = [
     {
       number: '01',
-      title: 'Lorem Ipsum',
-      description: 'Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi.'
+      title: 'Quality & Taste',
+      description: 'Delight in our delicious and high-quality offerings, where fresh ingredients meet expertly crafted recipes to tantalize your taste buds and ensure satisfaction.'
     },
     {
       number: '02',
-      title: 'Repellat Nihil',
-      description: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.'
+      title: 'Welcoming Atmosphere',
+      description: 'Experience a warm, inviting, and comfortable atmosphere, ideal for meeting friends, working, or simply unwinding in our friendly cafe.'
     },
     {
       number: '03',
-      title: 'Ad ad velit qui',
-      description: 'Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere.'
+      title: 'Great Service',
+      description: 'Enjoy our attentive and friendly service, where our dedicated team strives to make your visit enjoyable and ensures a pleasant dining experience.'
     },
   ];
 
   return (
-    <section className="why-us highlight_bg">
+    <section className="why-us aboutcard_bg">
       <div className="container">
         <h2 className="title">Why Choose Our Restaurant</h2>
         <div className="why-us-grid">

@@ -1,5 +1,4 @@
 .con-hero {
-  background-image: url('/header_img.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -17,6 +16,7 @@
 .con-hero h1 {
   font-size: 3rem;
   margin-bottom: 10px;
+  color: #e7b745;
 }
 
 .con-hero p {

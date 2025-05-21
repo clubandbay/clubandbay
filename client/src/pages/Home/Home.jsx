@@ -1,6 +1,5 @@
 import React from 'react';
 import Hero from './Section/Hero';
-import Menu from './Section/Menu';
 import Offers from './Section/Offers';
 import FAQ from './Section/FAQ';
 import HomeBanner from '../../components/HomeContent/HomeBanner';
@@ -19,9 +18,6 @@ const Home = () => {
       <HomeBanner />
       <HomeOffer />
       <HomeHighlights />
-      <div id="menu">
-        <Menu />
-      </div>
       <Offers />
       <FAQ />
     </div>

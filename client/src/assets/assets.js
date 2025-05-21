@@ -1,8 +1,9 @@
 import basket_icon from './basket_icon.png'
 import logo from './logo.jpg'
 import header_img from './header_img.png'
+import burger from './burger.jpg'
 import search_icon from './search_icon.png'
-import abouthero from './abouthero.png'
+import abouthero from './abouthero.jpg'
 import aboutwel from './aboutwel.jpg'
 import aboutwel2 from './aboutwel2.jpg'
 import aboutwel3 from './aboutwel3.jpg'
@@ -64,9 +65,24 @@ import profile_icon from './profile_icon.png'
 import bag_icon from './bag_icon.png'
 import logout_icon from './logout_icon.png'
 import parcel_icon from './parcel_icon.png'
+import kitchenchef from './kitchenchef.jpg'
+import kitcheni3 from './kitcheni3.png'
+import kitcheni1 from './kitcheni1.png'
+import kitcheni4 from './kitcheni4.png'
+import kitcheni2 from './kitcheni2.png'
+import offercoffee from './offercoffee.png'
+import offerpizza from './offerpizza.jpg'
 
 export const assets = {
+    kitchenchef,
+    offerpizza,
+    offercoffee,
+    kitcheni3,
+    kitcheni4,
+    kitcheni1,
+    kitcheni2,
     abouthero,
+    burger,
     aboutwel,
     aboutwel2,
     aboutwel3,

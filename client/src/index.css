@@ -46,7 +46,9 @@ a{
 .section_bg,
 .highlight_bg,
 .homemenu_bg,
-.menuhero_bg {
+.menuhero_bg,
+.aboutcard_bg
+.contacthero_bg{
   background-image: url("./assets/blackbg.jpg");
   background-size: cover;
   background-position: center;
@@ -62,6 +64,14 @@ a{
 
 .menuhero_bg{
   background-image: url("./assets/decobg.jpg");
+  background-attachment: fixed
+}
+.aboutcard_bg{
+  background-image: url("./assets/aboutcardbg.jpg");
+  background-attachment: fixed
+}
+.contacthero_bg{
+  background-image: url("./assets/contacthero.jpg");
   background-attachment: fixed
 }
 
