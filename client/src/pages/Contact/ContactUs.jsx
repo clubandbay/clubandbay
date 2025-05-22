@@ -1,15 +1,16 @@
 import React from 'react';
-import './ContactUs.css';
 import ConHero from './ContactUs-section/ConHero';
 import ConBoxes from './ContactUs-section/ConBoxes';
-import ConMapForm from './ContactUs-section/ConMapForm'; 
-
+import ConMap from './ContactUs-section/ConMap'; 
+import Comform from './ContactUs-section/ConForm';
+import ConForm from './ContactUs-section/ConForm';
 const ContactUs = () => {
   return (
     <div className="contact-us">
       <ConHero />
       <ConBoxes />
-      <ConMapForm />
+      <ConForm/>
+      <ConMap />
     </div>
   );
 };

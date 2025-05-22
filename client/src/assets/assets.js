@@ -72,10 +72,12 @@ import kitcheni4 from './kitcheni4.png'
 import kitcheni2 from './kitcheni2.png'
 import offercoffee from './offercoffee.png'
 import offerpizza from './offerpizza.jpg'
+import conBG from './conBG.jpeg'
 
 export const assets = {
     kitchenchef,
     offerpizza,
+    conBG,
     offercoffee,
     kitcheni3,
     kitcheni4,

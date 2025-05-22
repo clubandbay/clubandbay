@@ -24,7 +24,7 @@ html {
   display: flex;
   list-style: none;
   gap: 20px;
-  color: #ECF0F1;
+  color: #ffffff;
   font-size: 18px;
   font-weight: 500;
   margin-left: 30px;
@@ -73,6 +73,7 @@ html {
 .social_icon {
     display: flex;
     gap: 10px;
+    color: white;
   }
   
 .icon-box {
@@ -81,15 +82,16 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid #ccc;
+    border: 1px solid #ffffff;
     border-radius: 6px;
-    background-color: #FFFFFF;
+    border: 2px solid;
+    background-color: #0b3171;
     transition: background-color 0.3s ease;
     cursor: pointer;
   }
   
 .icon-box:hover {
-    background-color: #F1C40F;
+    background-color: #e7b745;
   }
 
 /* Call Now Button */
@@ -97,7 +99,7 @@ html {
   background: transparent;
   font-size: 16px;
   color: #FFFFFF;
-  border: 1px solid #FFFFFF;
+  border: 2px solid #FFFFFF;
   padding: 8px 25px;
   border-radius: 25px;
   cursor: pointer;
@@ -105,9 +107,7 @@ html {
 }
 
 .navbar button:hover {
-  background-color: #0b3171;
-  border: 2px solid;
-  font-weight: bold;
+  background-color: #e7b745;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
