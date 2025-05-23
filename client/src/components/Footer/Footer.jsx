@@ -1,7 +1,6 @@
 import React from 'react';
 import {
   FaFacebookF,
-  FaTwitter,
   FaInstagram,
   FaPhoneAlt,
   FaEnvelope,
@@ -17,13 +16,17 @@ const Footer = () => {
         <div className="footer-column footer-logo">
           <img src="/logo.jpg" alt="logo" />
           <div className="social-icons">
-            <Link to="https://facebook.com" target="_blank" className='border-2 !p-2 rounded-full' rel="noopener noreferrer" aria-label="Facebook">
+            <Link to="https://facebook.com" target="_blank" className='social-circle' rel="noopener noreferrer" aria-label="Facebook">
               <FaFacebookF />
             </Link>
-            <Link to="https://twitter.com" target="_blank" className='border-2 !p-2 rounded-full' rel="noopener noreferrer" aria-label="Twitter">
-              <FaTwitter />
+            <Link to="https://x.com" target="_blank" rel="noopener noreferrer" className="social-circle" aria-label='Twitter'>
+                  <img
+                    src="/twitter_icon.png"
+                    alt="X (Twitter)"
+                    className='w-5 h-5 object-contain'
+                  />
             </Link>
-            <Link to="https://instagram.com" target="_blank" className='border-2 !p-2 rounded-full' rel="noopener noreferrer" aria-label="Instagram">
+            <Link to="https://instagram.com" target="_blank" className='social-circle' rel="noopener noreferrer" aria-label="Instagram">
               <FaInstagram />
             </Link>
           </div>

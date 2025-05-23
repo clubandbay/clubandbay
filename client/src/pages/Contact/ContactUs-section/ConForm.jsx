@@ -44,14 +44,14 @@ const ConForm = () => {
             </div>
 
             <div className="row">
-                <label htmlFor="subscription" className="label">Choose Subscription</label>
+                
                 <select id="subscription" required>
-                    <option value="">Select a Plan</option>
-                    <option value="Club Crystal">Club Crystal – ₹376</option>
-                    <option value="Club Pearl">Club Pearl – ₹564</option>
-                    <option value="Club Ruby">Club Ruby – ₹1,045</option>
-                    <option value="Club Emerald">Club Emerald – ₹1,443</option>
-                    <option value="Club Diamond">Club Diamond – ₹1,569</option>
+                    <option value="">Choose Your Subscription Plan</option>
+                    <option value="Club Crystal">Club Crystal [2 Days(Mon & Wed)] - ₹376</option>
+                    <option value="Club Pearl">Club Pearl [3 Days(Mon, Wed & Fri)] - ₹564</option>
+                    <option value="Club Ruby">Club Ruby [5 Days(Mon - Fri)] - ₹1,045</option>
+                    <option value="Club Emerald">Club Emerald [6 Days (Mon-Fri + alt. Sat)] - ₹1,443</option>
+                    <option value="Club Diamond">Club Diamond [6 Days (Mon - Sat)] - ₹1,569</option>
                 </select>
               </div>
 

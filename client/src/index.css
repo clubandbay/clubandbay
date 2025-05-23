@@ -74,7 +74,10 @@ a{
   background-image: url("./assets/contacthero.jpg");
   background-attachment: fixed
 }
-
+.FAQ-Bg{
+  background-image: url("./assets/FAQ-Bg.jpg");
+  background-attachment: fixed
+}
 /* Font faces */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&family=Dancing+Script:wght@700&display=swap');
 

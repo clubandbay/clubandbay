@@ -73,9 +73,11 @@ import kitcheni2 from './kitcheni2.png'
 import offercoffee from './offercoffee.png'
 import offerpizza from './offerpizza.jpg'
 import conBG from './conBG.jpeg'
+import FAQ_scanner from './FAQ_scanner.jpg'
 
 export const assets = {
     kitchenchef,
+    FAQ_scanner,
     offerpizza,
     conBG,
     offercoffee,
