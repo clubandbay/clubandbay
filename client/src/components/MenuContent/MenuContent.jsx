@@ -182,7 +182,7 @@ const MenuContent = () => {
                     onClick={() => handleItemClick(activeTab, item.slug)}
                     className="!bg-[#0b3171] text-white !p-3 !rounded-full font-bold hover:!bg-blue-600 transition-colors duration-300"
                   >
-                     <FaArrowRight className="text-xl" />
+                     <FaArrowRight className="text-xl text-[#e7b745]" />
                   </motion.button>
                 </div>
               </motion.div>

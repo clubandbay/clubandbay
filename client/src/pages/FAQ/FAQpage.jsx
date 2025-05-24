@@ -81,12 +81,12 @@ const FAQpage = () => {
           {faqData.map((faq, index) => (
             <div
               key={index}
-              className="bg-white !p-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 flex justify-between items-center"
+              className="bg-gray-900 !p-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 flex justify-between items-center"
             >
-              <p className="text-lg font-medium text-black">{faq.question}</p>
+              <p className="text-lg font-medium text-white">{faq.question}</p>
               <button
                 onClick={() => handleQuestionClick(index)}
-                className="text-gray-600 hover:text-[#5c7c3b] !bg-[#e7b745] transition-all transform hover:scale-110"
+                className="text-gray-600 hover:text-[#e7b745] !bg-[#e7b745] transition-all transform hover:scale-110"
               >
                 <FaEye className="w-6 h-6 text-[#0b3171] cursor-pointer" />
               </button>

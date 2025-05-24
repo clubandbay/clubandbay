@@ -49,10 +49,10 @@ const FAQ = () => {
     <section className="mt-[100px] !py-10 bg-textColo FAQ-Bg">
       <div className="container">
         <div className="text-center">
-          <h2 className="text-3xl !text-[#0b3171] sm:text-4xl font-bold text-gray-800 !mb-4">
-            <span className="inline-block w-[20px] sm:w-[50px] h-[3px] bg-[#e7b745] !mb-2.5"></span>
+          <h2 className="text-3xl !text-[#e7b745] sm:text-4xl font-bold !mb-4">
+            <span className="inline-block w-[20px] sm:w-[50px] h-[3px] bg-[#e7b745] !mr-2 !mb-2.5"></span>
             FAQ
-            <span className="inline-block w-[20px] sm:w-[50px] h-[3px] bg-[#e7b745] !mb-2.5"></span>
+            <span className="inline-block w-[20px] sm:w-[50px] h-[3px] bg-[#e7b745] !ml-2 !mb-2.5"></span>
           </h2>
           <p className="text-base sm:text-lg text-[#e7b745] !mb-8 sm:!mb-12">
             Frequently Asked Questions

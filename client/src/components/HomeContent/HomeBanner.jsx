@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { FaHamburger, FaStar, FaUtensils, FaGlassWhiskey, FaLeaf } from 'react-icons/fa';
 import { GiChickenLeg, GiMeal } from 'react-icons/gi';
-import Burger from '../../assets/burgerbg.png';
+import Food2 from '../../assets/delBurger.jpg';
 
 const HomeBanner = () => {
   // Animation variants
@@ -41,7 +41,7 @@ const HomeBanner = () => {
   };
 
   return (
-    <section className="w-full bg-gradient-to-br from-white to-gray-100 !py-16 !px-4 md:!px-16 flex flex-col lg:flex-row items-center justify-between gap-12 relative overflow-hidden">
+    <section className="w-full bg-white !py-16 !px-4 md:!px-16 flex flex-col lg:flex-row items-center justify-between gap-12 relative overflow-hidden">
       {/* Floating food icons */}
       <div className="absolute inset-0 pointer-events-none">
         <motion.div
@@ -100,7 +100,7 @@ const HomeBanner = () => {
           className="relative"
         >
           <img
-            src={Burger}
+            src={Food2}
             alt="Premium Burger"
             className="w-80 md:w-[28rem] lg:w-[32rem] object-contain drop-shadow-2xl"
           />

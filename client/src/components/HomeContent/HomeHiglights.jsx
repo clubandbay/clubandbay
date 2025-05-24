@@ -51,7 +51,7 @@ const HomeHighlights = () => {
   };
 
   return (
-    <section className=" !py-20 overflow-hidden">
+    <section className="border-4 border-black !py-20 overflow-hidden">
       
 
       <div className="container !mx-auto relative highlight_bg !px-4 !py-10 z-10 rounded-2xl">
