@@ -1,105 +1,212 @@
 import React from 'react';
 
-// TrustUs Component
-const App = () => {
-  // Data for the trust points
-  const trustPoints = [
-    {
-      id: '01',
-      title: 'We are located in the city center',
-      description: 'Porro nemo veniam necessitatibus praesentium eligendi rem temporibus adipisci quo modi numquam.',
-    },
-    {
-      id: '02',
-      title: 'Fresh ingredients from organic farms',
-      description: 'Porro nemo veniam necessitatibus praesentium eligendi rem temporibus adipisci quo modi numquam.',
-    },
-    {
-      id: '03',
-      title: 'Own fast delivery, 30 min Maximum',
-      description: 'Porro nemo veniam necessitatibus praesentium eligendi rem temporibus adipisci quo modi numquam.',
-    },
-    {
-      id: '04',
-      title: 'Professional, experienced chefs',
-      description: 'Porro nemo veniam necessitatibus praesentium eligendi rem temporibus adipisci quo modi numquam.',
-    },
-    {
-      id: '05',
-      title: 'The highest standards of service',
-      description: 'Porro nemo veniam necessitatibus praesentium eligendi rem temporibus adipisci quo modi numquam.',
-    },
-  ];
-
+const RestaurantBanner = () => {
   return (
-    <section className="relative min-h-screen bg-gray-50 overflow-hidden font-inter !py-16 !px-4 sm:!px-6 lg:!px-8">
-      {/* Background Animation */}
-      <div className="absolute inset-0 z-0">
-        <div className="absolute top-0 left-0 w-64 h-64 bg-yellow-200 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-blob"></div>
-        <div className="absolute top-0 right-0 w-64 h-64 bg-blue-200 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-blob animation-delay-2000"></div>
-        <div className="absolute bottom-0 left-1/4 w-64 h-64 bg-pink-200 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-blob animation-delay-4000"></div>
+    <div className="w-full bg-black relative overflow-hidden">
+      {/* Animated Shooting Stars Background */}
+      <div className="absolute inset-0 overflow-hidden">
+        {/* Shooting Stars */}
+        {[...Array(15)].map((_, i) => (
+          <div
+            key={i}
+            className="absolute w-1 h-1 bg-white rounded-full opacity-80"
+            style={{
+              top: `${Math.random() * 100}%`,
+              left: `${Math.random() * 100}%`,
+              animation: `shootingStar ${3 + Math.random() * 4}s linear infinite`,
+              animationDelay: `${Math.random() * 5}s`
+            }}
+          />
+        ))}
+        
+        {/* Twinkling Stars */}
+        {[...Array(20)].map((_, i) => (
+          <div
+            key={i + 15}
+            className="absolute w-0.5 h-0.5 bg-white rounded-full"
+            style={{
+              top: `${Math.random() * 100}%`,
+              left: `${Math.random() * 100}%`,
+              animation: `twinkle ${2 + Math.random() * 3}s ease-in-out infinite`,
+              animationDelay: `${Math.random() * 3}s`
+            }}
+          />
+        ))}
       </div>
 
-      <div className="relative z-10 container !mx-auto">
-        <h2 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-900 text-center !mb-12 leading-tight">
-          Why Trust Us?
-        </h2>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {trustPoints.map((point) => (
-            <div
-              key={point.id}
-              className="bg-white !p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 flex flex-col items-start"
-            >
-              <div className="flex items-center !mb-4">
-                {/* Unique ID with circular border */}
-                <div className="w-12 h-12 flex items-center justify-center rounded-full border-2 border-yellow-400 text-yellow-500 font-bold text-xl !mr-4">
-                  {point.id}
-                </div>
-                {/* Title */}
-                <h3 className="text-xl font-semibold text-gray-800 leading-snug">
-                  {point.title}
-                </h3>
-              </div>
-              {/* Description */}
-              <p className="text-gray-600 text-base leading-relaxed">
-                {point.description}
-              </p>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      {/* Tailwind CSS keyframes for blob animation */}
-      <style>
-        {`
-        @keyframes blob {
+      {/* CSS Animations */}
+      <style jsx>{`
+        @keyframes shootingStar {
           0% {
-            transform: translate(0, 0) scale(1);
+            transform: translateX(-100px) translateY(0px) scale(0);
+            opacity: 0;
           }
-          33% {
-            transform: translate(30px, -50px) scale(1.1);
+          10% {
+            opacity: 1;
+            transform: translateX(-50px) translateY(-10px) scale(1);
           }
-          66% {
-            transform: translate(-20px, 20px) scale(0.9);
+          90% {
+            opacity: 1;
+            transform: translateX(100vw) translateY(-100px) scale(1);
           }
           100% {
-            transform: translate(0, 0) scale(1);
+            transform: translateX(100vw) translateY(-120px) scale(0);
+            opacity: 0;
           }
         }
-        .animate-blob {
-          animation: blob 7s infinite cubic-bezier(0.6, 0.01, 0.4, 1);
+
+        @keyframes twinkle {
+          0%, 100% {
+            opacity: 0.3;
+            transform: scale(0.8);
+          }
+          50% {
+            opacity: 1;
+            transform: scale(1.2);
+          }
         }
-        .animation-delay-2000 {
-          animation-delay: 2s;
-        }
-        .animation-delay-4000 {
-          animation-delay: 4s;
-        }
-        `}
-      </style>
-    </section>
+      `}</style>
+      {/* Main Container */}
+      <div className="max-w-7xl !mx-auto !px-4 sm:!px-6 lg:!px-8 !py-8 lg:!py-12 relative z-10">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+          
+          {/* Left Content */}
+          <div className="!space-y-6 lg:!space-y-8">
+            {/* Header with decorative elements */}
+            <div className="flex items-center !space-x-2 text-[#e7b745]">
+              <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2L13.09 8.26L20 9L13.09 9.74L12 16L10.91 9.74L4 9L10.91 8.26L12 2Z"/>
+              </svg>
+              <span className="text-lg font-medium">Club and Bay BKC Introduction</span>
+              <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2L13.09 8.26L20 9L13.09 9.74L12 16L10.91 9.74L4 9L10.91 8.26L12 2Z"/>
+              </svg>
+            </div>
+
+            {/* Main Heading */}
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-serif text-white leading-tight">
+              To Take Healthy Food.
+            </h1>
+
+            {/* Description */}
+            <p className="text-gray-300 text-base sm:text-lg leading-relaxed">
+              It has survived not only five centuries, but also the leap into electronic typesetting, remaining 
+              essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets 
+              containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus 
+              PageMaker including versions of Lorem Ipsum.
+            </p>
+
+            {/* Features Grid */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-gray-200">
+              <div className="!space-y-3">
+                <div className="flex items-center !space-x-3">
+                  <span className="text-[#e7b745] text-lg">»</span>
+                  <span className="font-medium">Delicious Food</span>
+                </div>
+                <div className="flex items-center !space-x-3">
+                  <span className="text-[#e7b745] text-lg">»</span>
+                  <span className="font-medium">Cost Effective</span>
+                </div>
+                <div className="flex items-center !space-x-3">
+                  <span className="text-[#e7b745] text-lg">»</span>
+                  <span className="font-medium">Quality Food</span>
+                </div>
+              </div>
+              <div className="!space-y-3">
+                <div className="flex items-center !space-x-3">
+                  <span className="text-[#e7b745] text-lg">»</span>
+                  <span className="font-medium">Expert Chef</span>
+                </div>
+                <div className="flex items-center !space-x-3">
+                  <span className="text-[#e7b745] text-lg">»</span>
+                  <span className="font-medium">Letraset Sheets</span>
+                </div>
+                <div className="flex items-center !space-x-3">
+                  <span className="text-[#e7b745] text-lg">»</span>
+                  <span className="font-medium">Quality Food</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Achievements Section */}
+            <div className="!space-y-4">
+              <h3 className="text-lg font-medium text-white">Our Achievement:</h3>
+              <div className="flex flex-wrap gap-4">
+                {/* Achievement Badges */}
+                <div className="w-16 h-16 rounded-full bg-[#e7b745] flex items-center justify-center shadow-lg">
+                  <div className="text-white text-xs font-bold text-center">
+                    <div>BEST</div>
+                    <div>CHEF</div>
+                  </div>
+                </div>
+                <div className="w-16 h-16 rounded-full bg-[#e7b745] flex items-center justify-center shadow-lg">
+                  <div className="text-white text-xs font-bold text-center">
+                    <div>QUALITY</div>
+                    <div>FOOD</div>
+                  </div>
+                </div>
+                <div className="w-16 h-16 rounded-full bg-[#e7b745] flex items-center justify-center shadow-lg">
+                  <div className="text-white text-xs font-bold text-center">
+                    <div>FAST</div>
+                    <div>SERVICE</div>
+                  </div>
+                </div>
+                <div className="w-16 h-16 rounded-full bg-[#e7b745] flex items-center justify-center shadow-lg">
+                  <div className="text-white text-xs font-bold text-center">
+                    <div>FRESH</div>
+                    <div>FOOD</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Discover More Button */}
+            <div className="!pt-4">
+              <button className="border-2 border-[#e7b745] text-[#e7b745] !px-8 !py-3 font-medium hover:bg-[#e7b745] hover:text-black transition-colors duration-300 flex items-center !space-x-2">
+                <span className="text-[#e7b745] hover:text-black">?</span>
+                <span>Discover More</span>
+              </button>
+            </div>
+          </div>
+
+          {/* Right Images Section */}
+          <div className="relative">
+            <div className="grid grid-cols-2 gap-4 h-full">
+              {/* Top Left - Food Image */}
+              <div className="relative">
+                <div className="bg-gradient-to-br from-green-100 to-green-200 rounded-2xl !p-6 h-64 sm:h-80 flex items-center justify-center">
+                  <div className="relative w-full h-full bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div className="absolute inset-0 bg-gradient-to-br from-red-400 to-red-600 opacity-20"></div>
+                    <div className="w-full h-full object-cover bg-gradient-to-br from-red-500 to-red-700 rounded-lg flex items-center justify-center">
+                      <div className="text-white font-bold">FOOD</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Top Right - Chef Image */}
+              <div className="relative row-span-2">
+                <div className="bg-gradient-to-br from-gray-100 to-gray-200 rounded-2xl h-full min-h-64 sm:min-h-96 flex items-center justify-center">
+                  <div className="w-full h-full object-cover bg-gradient-to-b from-gray-300 to-gray-500 rounded-2xl flex items-center justify-center">
+                    <div className="text-white font-bold">CHEF</div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Bottom Left - Vegetables */}
+              <div className="relative">
+                <div className="bg-gradient-to-br from-orange-100 to-orange-200 rounded-2xl !p-4 h-48 sm:h-64 flex items-center justify-center">
+                  <div className="w-full h-full object-cover bg-gradient-to-br from-orange-400 to-orange-600 rounded-lg flex items-center justify-center">
+                    <div className="text-white font-bold">FRESH</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 };
 
-export default App;
+export default RestaurantBanner;

@@ -39,7 +39,7 @@ return (
           <Link to="/about" onClick={() => setMenu("about")}>About Us</Link>
         </li>
         <li className={menu === "services" ? "active" : ""}>
-          <Link to="/services" onClick={() => setMenu("services")}>Services</Link>
+          <Link to="/services" onClick={() => setMenu("services")}>Subscriptions</Link>
         </li>
         <li className={menu === "contact" ? "active" : ""}>
           <Link to="/contact" onClick={() => setMenu("contact")}>Contact</Link>
