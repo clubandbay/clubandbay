@@ -4,8 +4,8 @@ import { FaArrowRight } from 'react-icons/fa';
 import Logo from '../../assets/pnglogo.png'
 import { Link } from 'react-router-dom';
 
-const Hero = ({HomeHero, MenuHero, AboutHero}) => {
-  const heroContent = HomeHero || MenuHero || AboutHero;
+const Hero = ({HomeHero, MenuHero, AboutHero, ContactHero, FAQHero}) => {
+  const heroContent = HomeHero || MenuHero || AboutHero || ContactHero || FAQHero;
   return (
     // <section className="relative !py-28 md:!py-36 lg:!pb-44 lg:!pt-20 menuhero_bg overflow-hidden">
     <section

@@ -8,6 +8,7 @@ import aboutwel from './aboutwel.jpg'
 import aboutwel2 from './aboutwel2.jpg'
 import aboutwel3 from './aboutwel3.jpg'
 import aboutwel4 from './aboutwel4.jpg'
+import Twitter from './twitter.png'
 import menu_1 from './menu_1.png'
 import menu_2 from './menu_2.png'
 import menu_3 from './menu_3.png'
@@ -78,6 +79,7 @@ import FAQ_scanner from './FAQ_scanner.jpg'
 export const assets = {
     kitchenchef,
     FAQ_scanner,
+    Twitter,
     offerpizza,
     conBG,
     offercoffee,

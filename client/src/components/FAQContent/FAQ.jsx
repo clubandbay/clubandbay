@@ -104,7 +104,7 @@ const AccordionItem = ({ question, answer, isOpen, onToggle }) => {
       </div>
       <div
         className={`overflow-hidden transition-max-height duration-500 ease-in-out ${isOpen ? 'max-h-40' : 'max-h-0'
-          } bg-#000000 border-t border-[#e7b745]`}
+          } bg-black border-t border-[#e7b745]`}
       >
         <p className="!p-4 text-[#ffffff]">{answer}</p>
       </div>

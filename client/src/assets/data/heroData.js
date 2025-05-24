@@ -7,6 +7,8 @@ import HomeFood5 from '../pngroll.png'
 
 import Menubg from '../bgimages/menubg.jpg'
 import Aboutbg from '../bgimages/aboutbg.jpg'
+import Contactbg from '../bgimages/contactbg.jpg'
+import FAQbg from '../bgimages/FAQbg.jpg'
 
 export const HomeHero = {
   title: 'Order your favourite food here',
@@ -65,21 +67,40 @@ export const AboutHero = {
   HF5: HomeFood5,
 }
 
-// export const FaqHero = {
-//   title: 'Our Delicious Menu',
-//   description: 'Crafted with passion using the freshest ingredients to delight your taste buds',
-//   image: FAQbg,
-//   button: {
-//     text: 'Start Now',
-//     link: '/contact',
-//   },
-//   buttonAbout: {
-//     text: 'Learn More',
-//     link: '/about',
-//   },
-//   HF1: HomeFood1,
-//   HF2: HomeFood2,
-//   HF3: HomeFood3,
-//   HF4: HomeFood4,
-//   HF5: HomeFood5,
-// }
+export const FAQHero = {
+  title: 'Our Delicious Menu',
+  description: 'Crafted with passion using the freshest ingredients to delight your taste buds',
+  image: FAQbg,
+  button: {
+    text: 'Start Now',
+    link: '/contact',
+  },
+  buttonAbout: {
+    text: 'Learn More',
+    link: '/about',
+  },
+  HF1: HomeFood1,
+  HF2: HomeFood2,
+  HF3: HomeFood3,
+  HF4: HomeFood4,
+  HF5: HomeFood5,
+}
+
+export const ContactHero = {
+  title: 'Great Food Starts with a Simple Conversation',
+  description: "We're more than just a restaurant — we're your neighbors, your late-night craving fixers, and your weekend dinner heroes.Let's talk, we're always ready to serve.",
+  image: Contactbg,
+  button: {
+    text: 'Our Menu',
+    link: '/Menu',
+  },
+  buttonAbout: {
+    text: 'Learn More',
+    link: '/about',
+  },
+  HF1: HomeFood1,
+  HF2: HomeFood2,
+  HF3: HomeFood3,
+  HF4: HomeFood4,
+  HF5: HomeFood5,
+}
