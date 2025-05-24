@@ -4,7 +4,7 @@ import { MdSupportAgent, MdEmail, MdCall, MdLocationOn } from 'react-icons/md';
 
 const ConBoxes = () => {
   return (
-    <section className="con-boxes">
+    <section className="con-boxes container">
       <div className="con-boxes-heading">
         <h2>We're Always Here to Serve You - Just Reach Out</h2>
         <p>Whether you're planning a meal, booking a table, or just have a question, our friendly team is just a message away.<br/> Because great food starts with great service.</p>
