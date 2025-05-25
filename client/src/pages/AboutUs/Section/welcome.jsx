@@ -1,5 +1,5 @@
 import React from 'react';
-import './Welcome.css';
+import './welcome.css';
 import aboutwel from '../../../assets/aboutwel.jpg';
 import aboutwel2 from '../../../assets/aboutwel2.jpg';
 import aboutwel3 from '../../../assets/aboutwel3.jpg';
