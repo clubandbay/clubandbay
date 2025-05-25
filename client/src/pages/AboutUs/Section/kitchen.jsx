@@ -1,5 +1,5 @@
 import React from 'react';
-import './Kitchen.css';
+import './kitchen.css';
 
 const Kitchen = () => {
   return (
