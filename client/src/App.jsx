@@ -9,10 +9,12 @@ import ContactUs from './pages/Contact/ContactUs';
 import Footer from './components/Footer/Footer';
 import FoodItemDetails from './pages/FoodItemDetails';
 import FAQpage from './pages/FAQ/FAQpage';
+import ScrollToTop from './components/Others/ScrollToTop';
 
 const App = () => {
   return (
     <BrowserRouter>
+    <ScrollToTop />
        <Navbar/>
 
        <Routes>

@@ -106,11 +106,12 @@
 @media (max-width: 768px) {
   .footer-main {
     flex-direction: column;
-    align-items: center;
+    align-items: start;
   }
 
   .footer-column {
     max-width: 300px;
-    text-align: center;
+    text-align: start;
+    margin-left: 20px;
   }
 }

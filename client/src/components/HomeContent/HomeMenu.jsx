@@ -26,7 +26,7 @@ const HomeMenu = () => {
   }, [activeTab]);
 
   return (
-    <div className="homemenu_bg text-white !px-4 md:!px-20 !py-20 font-serif">
+    <div className="homemenu_bg text-white !px-4 md:!px-20 !py-20 font-serif overflow-x-hidden">
       <div className="container !mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}

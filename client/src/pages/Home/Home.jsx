@@ -7,6 +7,7 @@ import Hero from '../../components/Others/Hero';
 import { HomeHero } from '../../assets/data/heroData';
 import TrustUs from '../../components/HomeContent/TrustUs';
 import HomeOffer from '../../components/HomeContent/HomeOffer';
+import HomeSubscription from '../../components/HomeContent/HomeSubscription';
 
 const Home = () => {
   return (
@@ -18,6 +19,7 @@ const Home = () => {
       <HomeOffer />
       <HomeMenu />
       <HomeBanner />
+      <HomeSubscription />
       <HomeHighlights />
       <FAQ />
     </div>

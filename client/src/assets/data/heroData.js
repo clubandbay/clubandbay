@@ -9,6 +9,7 @@ import Menubg from '../bgimages/menubg.jpg'
 import Aboutbg from '../bgimages/aboutbg.jpg'
 import Contactbg from '../bgimages/contactbg.jpg'
 import FAQbg from '../bgimages/FAQbg.jpg'
+import SubscriptionBG from '../bgimages/subscriptionbg.jpg'
 
 export const HomeHero = {
   title: 'Order your favourite food here',
@@ -68,7 +69,7 @@ export const AboutHero = {
 }
 
 export const FAQHero = {
-  title: 'Our Delicious Menu',
+  title: 'Have Any Query?',
   description: 'Crafted with passion using the freshest ingredients to delight your taste buds',
   image: FAQbg,
   button: {
@@ -90,6 +91,25 @@ export const ContactHero = {
   title: 'Great Food Starts with a Simple Conversation',
   description: "We're more than just a restaurant — we're your neighbors, your late-night craving fixers, and your weekend dinner heroes.Let's talk, we're always ready to serve.",
   image: Contactbg,
+  button: {
+    text: 'Our Menu',
+    link: '/Menu',
+  },
+  buttonAbout: {
+    text: 'Learn More',
+    link: '/about',
+  },
+  HF1: HomeFood1,
+  HF2: HomeFood2,
+  HF3: HomeFood3,
+  HF4: HomeFood4,
+  HF5: HomeFood5,
+}
+
+export const SubscriptionHero = {
+  title: 'Great Food Starts with a Simple Conversation',
+  description: "We're more than just a restaurant — we're your neighbors, your late-night craving fixers, and your weekend dinner heroes.Let's talk, we're always ready to serve.",
+  image: SubscriptionBG,
   button: {
     text: 'Our Menu',
     link: '/Menu',
