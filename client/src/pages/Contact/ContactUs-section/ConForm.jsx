@@ -18,17 +18,19 @@ const ConForm = () => {
             </div>
 
             <div className="row">
-              <select>
+              <select className='w-[100%] sm:w-auto'>
                 <option>Select Persons</option>
                 <option>1 Person</option>
                 <option>2 Persons</option>
                 <option>3 Persons</option>
                 <option>4+ Persons</option>
               </select>
+
               <div className="input-icon">
                 <FaCalendarAlt className='icon-white'/>
                 <input type="date" required />
               </div>
+
               <div className="input-icon">
                 <FaClock />
                 <select>

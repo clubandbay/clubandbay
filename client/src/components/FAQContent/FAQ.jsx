@@ -7,34 +7,34 @@ import { GoArrowUpRight } from 'react-icons/go';
 
 const faqData = [
   {
-    question: "What services does Advance Construction & Remodeling offer?",
+    question: "What is Club & Bay - BKC Breakfast Company?",
     answer:
-      "Advance Construction & Remodeling offers a wide range of services including Roof-to-Roof Construction, Property Management, Interior Design & Remodeling, and House Remodeling & Renovations.",
+      "We are a curated breakfast service for professionals commuting to BKC, offering wholesome, chef-crafted meals delivered or available for pickup between 7:00 AM and 9:45 AM. Our menu includes omelettes, paneer-stuffed meals, white/brown/multigrain toast, fresh juices, and more.",
   },
   {
-    question: "How can I request a quote?",
+    question: "What exactly is included in my subscription plan?",
     answer:
-      "You can request a quote by visiting our website and filling out the contact form, or by calling us directly at +1 (123) 456-7890.",
+      "Each subscription includes a freshly prepared breakfast combo with your chosen items like egg or paneer options, multigrain/brown/white bread, and cold-pressed juice. Delivery, packaging, and service fees are all included—no hidden charges.",
   },
   {
-    question: "Do you provide free consultations?",
+    question: "Are there any hidden charges like delivery or platform fees?",
     answer:
-      "Yes, we offer free consultations to discuss your project requirements and provide an estimate.",
+      "Currently, no. All prices are all-inclusive. We believe in transparent pricing. In the future, platform service fees may apply, which will be clearly communicated in advance.",
   },
   {
-    question: "Are your services available for both residential and commercial properties?",
+    question: "Can I customize my breakfast?",
     answer:
-      "Yes, we cater to both residential and commercial properties, offering tailored solutions for each.",
+      "Yes, within limits. You can choose between vegetarian and egg-based combos and select your preferred juice. Weekly menus are shared so you can pick preferences in advance.",
   },
   {
-    question: "How long does a typical construction project take?",
+    question: "Can I pause or skip a day in my subscription?",
     answer:
-      "The duration of a project depends on its scope and complexity. We provide a timeline during the consultation phase.",
+      "Absolutely. You may pause or reschedule your breakfast with at least 12-24 hours' notice via WhatsApp or your customer dashboard.",
   },
   {
-    question: "What materials do you use for construction?",
+    question: "When do I need to place my order?",
     answer:
-      "We use high-quality, durable materials that meet industry standards and ensure long-lasting results.",
+      "All orders must be confirmed before 10:00 PM the night prior. This ensures our team schedules fresh preparation early in the morning.",
   },
 ];
 
