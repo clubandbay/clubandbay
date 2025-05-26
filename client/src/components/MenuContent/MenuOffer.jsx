@@ -74,7 +74,7 @@ const MenuOffer = () => {
   ];
 
   return (
-    <section className="section_bg w-full relative bg-gradient-to-br from-[#0b3171] to-[#0a2458] !py-16 !px-4 md:!px-8 lg:!px-16 overflow-hidden">
+    <section className="section_bg w-full relative !py-32 !px-5 md:!px-8 lg:!px-16 overflow-hidden">
       {/* Floating Background Icons */}
       <div className="absolute top-0 left-0 w-full h-full pointer-events-none overflow-hidden">
         {[...Array(12)].map((_, i) => (

@@ -11,6 +11,7 @@ const MenuContent = () => {
   const [activeTab, setActiveTab] = useState('pizza');
   const [underlineWidth, setUnderlineWidth] = useState(0);
   const [underlineLeft, setUnderlineLeft] = useState(0);
+  const tabsContainerRef = useRef(null);
   const tabsRef = useRef([]);
   const navigate = useNavigate();
 
@@ -26,11 +27,30 @@ const MenuContent = () => {
   const menuItems = foodApi.getAllItems();
 
   useEffect(() => {
-    const activeTabElement = tabsRef.current.find(tab => tab?.dataset?.category === activeTab);
-    if (activeTabElement) {
-      setUnderlineWidth(activeTabElement.offsetWidth);
-      setUnderlineLeft(activeTabElement.offsetLeft);
-    }
+    const updateUnderlinePosition = () => {
+      const activeTabElement = tabsRef.current.find(tab => tab?.dataset?.category === activeTab);
+      const container = tabsContainerRef.current;
+      
+      if (activeTabElement && container) {
+        const containerRect = container.getBoundingClientRect();
+        const tabRect = activeTabElement.getBoundingClientRect();
+        
+        // Calculate relative position within the container
+        setUnderlineWidth(tabRect.width);
+        setUnderlineLeft(tabRect.left - containerRect.left);
+      }
+    };
+
+    updateUnderlinePosition();
+    
+    // Add resize and scroll listeners to update position
+    window.addEventListener('resize', updateUnderlinePosition);
+    window.addEventListener('scroll', updateUnderlinePosition);
+    
+    return () => {
+      window.removeEventListener('resize', updateUnderlinePosition);
+      window.removeEventListener('scroll', updateUnderlinePosition);
+    };
   }, [activeTab]);
 
   const handleItemClick = (category, slug) => {
@@ -70,22 +90,22 @@ const MenuContent = () => {
         </motion.div>
 
         {/* Tabs Navigation */}
-        <div className="relative !mb-16">
-          <div className="flex justify-center !space-x-1 md:!space-x-6 overflow-x-auto !pb-2 scrollbar-hide">
+        <div className="relative !mb-16" ref={tabsContainerRef}>
+          <div className="flex justify-start border-1 border-[#e7b745] shadow-lg rounded-xl !space-x-1 md:!space-x-6 overflow-x-auto !pb-2 scrollbar-hide !px-4">
             {menuCategories.map((category, index) => (
               <button
                 key={category.id}
                 ref={el => tabsRef.current[index] = el}
                 data-category={category.id}
                 onClick={() => setActiveTab(category.id)}
-                className={`flex items-center !px-6 !py-3 rounded-full transition-all duration-300 whitespace-nowrap ${
+                className={`flex items-center !px-4 sm:!px-6 !py-3 rounded-full transition-all duration-300 whitespace-nowrap flex-shrink-0 ${
                   activeTab === category.id 
                     ? '!text-[#0b3171] !bg-transparent' 
                     : '!text-[#0b3171] !bg-transparent hover:text-[#e7b745] bg-opacity-70 backdrop-blur-sm'
                 }`}
               >
                 <span className="!mr-2 text-xl">{category.icon}</span>
-                <span className="font-medium">{category.name}</span>
+                <span className="font-medium text-sm sm:text-base">{category.name}</span>
               </button>
             ))}
           </div>
@@ -97,6 +117,11 @@ const MenuContent = () => {
               width: underlineWidth,
               left: underlineLeft,
               transition: { type: 'spring', stiffness: 300, damping: 25 }
+            }}
+            style={{
+              // Ensure the underline stays within the container
+              minWidth: '50px', // Minimum width for small tabs
+              maxWidth: '150px' // Maximum width for large tabs
             }}
           />
         </div>

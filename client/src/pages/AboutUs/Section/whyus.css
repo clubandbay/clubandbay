@@ -3,7 +3,7 @@
   background-color: #000;
   color: #fff;
   text-align: center;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
 }
 
 .why-us h5 {
@@ -85,4 +85,10 @@
 .why-us-card:hover .card-number {
   color: #000;
   text-decoration: underline #000000;
+}
+
+@media (max-width: 768px) {
+  .why-us .title::after {
+    width: 320px;
+  }
 }

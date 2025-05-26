@@ -1,5 +1,5 @@
 import React from 'react';
-import './Welcome.css';
+import './welcome.css';
 import aboutwel from '../../../assets/aboutwel.jpg';
 import aboutwel2 from '../../../assets/aboutwel2.jpg';
 import aboutwel3 from '../../../assets/aboutwel3.jpg';
@@ -10,8 +10,8 @@ const Welcome = () => {
     <section className="welcome-section">
       <div className="grid grid-cols-2 flex-1 gap-4">
         <img src={aboutwel4} alt="Image 1" />
-        <img src={aboutwel2} alt="Image 2" className='!w-[200px] !mt-15' />
-        <img src={aboutwel} alt="Image 3" className='!w-[200px] !ml-15' />
+        <img src={aboutwel2} alt="Image 2" className='xl:!w-[200px] xl:!mt-15' />
+        <img src={aboutwel} alt="Image 3" className='xl:!w-[200px] xl:!ml-15' />
         <img src={aboutwel3} alt="Image 4" />
         
       </div>

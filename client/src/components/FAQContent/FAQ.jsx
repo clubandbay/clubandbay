@@ -66,7 +66,7 @@ const FAQ = () => {
             <img
               src={ScannerImg}
               alt="Scanner"
-              className="absolute bottom-4 right-0 !bottom-0 w-20 h-20 sm:w-34 sm:h-34"
+              className="absolute right-0 !bottom-0 w-20 h-20 sm:w-34 sm:h-34"
             />
           </div>
 
