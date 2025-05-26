@@ -1,6 +1,6 @@
 .con-section {
   background: #111;
-  padding: 90px 70px;
+  padding: 90px 5%;
   color: #fff;
 }
 
@@ -8,35 +8,55 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 40px;
 }
 
-.con-container{
-  background: #000000;
+.con-container {
+  background: #000;
   padding: 40px;
-  border-radius: 8px;
+  border-radius: 10px;
   flex: 1;
   min-width: 300px;
   max-width: 800px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
   position: relative;
-  overflow: hidden;
+  z-index: 1;
 }
 
 .contact-box {
   background: #0e0e0e;
   padding: 40px;
-  border-radius: 8px;
+  border-radius: 10px;
   flex: 1;
   min-width: 300px;
   max-width: 400px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
   position: relative;
-  overflow: hidden;
+  z-index: 1;
+  background-image: url('/conBG.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #fff;
+}
+
+.contact-box::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 0;
+  border-radius: 10px;
+}
+
+.contact-box > * {
+  position: relative;
+  z-index: 1;
 }
 
 .con-container h2,
 .contact-box h2 {
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   font-family: serif;
   margin-bottom: 10px;
   text-align: center;
@@ -45,7 +65,7 @@
 .con-container p {
   text-align: center;
   margin-bottom: 30px;
-  color: #bbb;
+  color: #ccc;
   font-size: 1rem;
 }
 
@@ -65,15 +85,26 @@
   flex-wrap: wrap;
 }
 
-input, select, textarea {
+input,
+select,
+textarea {
   flex: 1;
   background: #1a1a1a;
   color: #fff;
   border: 1px solid #333;
   padding: 12px 14px;
   font-size: 1rem;
-  border-radius: 4px;
+  border-radius: 6px;
   width: 100%;
+  transition: all 0.3s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: #f4c16e;
+  background-color: #222;
 }
 
 textarea {
@@ -105,40 +136,19 @@ button {
   padding: 14px;
   border: none;
   font-size: 1rem;
-  border-radius: 4px;
+  border-radius: 6px;
   cursor: pointer;
   text-transform: uppercase;
   letter-spacing: 1px;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 button:hover {
   background-color: #e2b055;
+  transform: scale(1.03);
 }
 
-/* Con-Background Image */
-.contact-box {
-  background-image: url('/conBG.jpeg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  color: #fff;
-}
-
-.contact-box::before {
-  content: '';
-  position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background-color: rgba(0, 0, 0, 0.6);
-  z-index: 0;
-  border-radius: 8px;
-}
-
-.contact-box > * {
-  position: relative;
-  z-index: 1;
-}
-
+/* Contact Info Styling */
 .contact-info h4 {
   margin-top: 20px;
   color: #eee;
@@ -147,7 +157,7 @@ button:hover {
 
 .contact-info p {
   margin: 6px 0;
-  color: #bbb;
+  color: #ccc;
   line-height: 1.6;
 }
 
@@ -157,9 +167,16 @@ button:hover {
   font-weight: bold;
 }
 
+/* Responsive Design */
 @media (max-width: 768px) {
   .con-wrapper {
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
+    gap: 30px;
+  }
+
+  .con-container,
+  .contact-box {
+    max-width: 100%;
   }
 }
