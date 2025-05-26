@@ -142,7 +142,7 @@ const FAQpage = () => {
             {faqData.map((faq, index) => (
               <div
                 key={index}
-                className="bg-gray-900 !p-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 flex justify-between items-center"
+                className="bg-gray-900 !p-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 flex justify-between items-center border-2 border-[#e7b745]"
               >
                 <p className="text-lg font-medium text-white">{faq.question}</p>
                 <button
@@ -158,11 +158,11 @@ const FAQpage = () => {
 
         {isModalOpen && selectedQuestion && (
           <div
-            className="fixed inset-0 z-50 flex items-center justify-center bg-black/30 backdrop-blur-sm"
+            className="fixed inset-0 z-50 flex items-center justify-center bg-black/30 backdrop-blur-sm "
             onClick={closeModal}
           >
             <div
-              className="bg-white/90 backdrop-blur-lg rounded-lg !p-8 max-w-2xl w-full !mx-4 relative transform transition-all duration-300 ease-out"
+              className="bg-white/90 backdrop-blur-lg rounded-lg !p-8 max-w-2xl w-full !mx-4 relative transform transition-all duration-300 ease-out border-2 border-[#e7b745]"
               style={{ animation: "modalFadeIn 0.3s ease-out" }}
               onClick={(e) => e.stopPropagation()}
             >

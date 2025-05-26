@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { FaGem, FaStar, FaBolt, FaCrown, FaInfoCircle, FaExclamationTriangle, FaCheck, FaArrowRight } from 'react-icons/fa';
+import { GiOysterPearl } from "react-icons/gi";
+import { DiRuby } from "react-icons/di";
 import { IoDiamond } from "react-icons/io5";
+import { GiEmerald } from "react-icons/gi";
 import SubscriptionImg from '../../assets/subcontbg.jpg'
 
 const SubscriptionComponent = () => {
@@ -34,7 +37,7 @@ const SubscriptionComponent = () => {
       gst: 27,
       totalPrice: 564,
       bestFor: 'Part-timers',
-      icon: <FaStar className="w-6 h-6" />,
+      icon: <GiOysterPearl className="w-6 h-6" />,
       gradient: 'from-slate-500 to-gray-600',
       bgColor: 'bg-gray-500/5',
       borderColor: 'border-gray-500/30',
@@ -48,21 +51,21 @@ const SubscriptionComponent = () => {
       gst: 50,
       totalPrice: 1045,
       bestFor: 'Regular professionals',
-      icon: <FaBolt className="w-6 h-6" />,
+      icon: <DiRuby className="w-6 h-6" />,
       gradient: 'from-rose-500 to-pink-600',
-      bgColor: 'bg-rose-500/5',
+      bgColor: 'bg-red-500/5',
       borderColor: 'border-rose-500/30',
       popular: true,
       color: 'rose'
     },
     {
       name: 'Club Emerald',
-      days: '6 days/week',
+      days: '5 days/week + 2 alternate working saturday only',
       basePrice: 1374,
       gst: 69,
       totalPrice: 1443,
       bestFor: 'High-frequency users',
-      icon: <FaCrown className="w-6 h-6" />,
+      icon: <GiEmerald className="w-6 h-6" />,
       gradient: 'from-emerald-500 to-green-600',
       bgColor: 'bg-emerald-500/5',
       borderColor: 'border-emerald-500/30',
@@ -226,7 +229,7 @@ const SubscriptionComponent = () => {
                   GST Information
                 </h3>
                 <p className="text-gray-300 leading-relaxed">
-                  GST will be charged separately on the invoice at 5%. Once your GST registration is official, 
+                  GST will be charged separately on the invoice at 5%. Once our GST registration is official, 
                   this will reflect in your tax-compliant bill. Until then, this format keeps pricing 
                   professional and ready for future scale.
                 </p>
@@ -247,7 +250,7 @@ const SubscriptionComponent = () => {
                 <p className="text-gray-300 leading-relaxed">
                   Club & Bay BKC is currently operating under startup compliance. We are not charging GST yet. 
                   Once our official GST registration is complete, government taxes will be added as per norms. 
-                  Thank you for supporting a growing local brand!
+                  Thank you for supporting our growing brand!
                 </p>
               </div>
             </div>

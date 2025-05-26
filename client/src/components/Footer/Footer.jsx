@@ -62,7 +62,7 @@ const Footer = () => {
       </div>
 
       <div className="footer-bottom">
-        © 2025 Food LLC – wellcome to our website
+        © 2025 Powered by – My Agro Food Chain (MFC)
       </div>
     </footer>
   );
