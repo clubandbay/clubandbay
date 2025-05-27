@@ -2,7 +2,7 @@ import React, { useEffect, useState, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { FaFacebookF, FaInstagram, FaBars, FaTimes } from 'react-icons/fa';
 import { motion, AnimatePresence } from 'framer-motion';
-import { assets } from '../../assets/assets';
+import Logo from '../../assets/logo.jpg'
 
 const Navbar = () => {
   const [menu, setMenu] = useState("home");
@@ -61,7 +61,7 @@ const Navbar = () => {
       {/* Navbar */}
       <div className="sticky top-0 z-[1000] flex justify-between items-center !px-4 sm:!px-8 !py-4 bg-[#0b3171] shadow-md">
         {/* Logo */}
-        <img src={assets.logo} alt="Logo" className="w-[100px] sm:w-[130px] object-contain" />
+        <img src={Logo} alt="Logo" className="w-[100px] sm:w-[130px] object-contain" />
 
         {/* Hamburger Icon */}
         <div

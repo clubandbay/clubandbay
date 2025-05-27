@@ -35,8 +35,8 @@ export const MenuHero = {
   description: 'Crafted with passion using the freshest ingredients to delight your taste buds',
   image: Menubg,
   button: {
-    text: 'Start Now',
-    link: '/contact',
+    text: 'Order On Whatsapp',
+    link: 'https://wa.me/919876543210?text=Hi%2C%20I%20want%20to%20place%20an%20order!',
   },
   buttonAbout: {
     text: 'Learn More',

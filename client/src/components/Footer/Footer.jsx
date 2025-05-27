@@ -65,8 +65,8 @@ const Footer = () => {
         <div className="footer-column">
           <h4>Licence</h4>
           <ul className='flex flex-col gap-4'>
-            <li><img src={FSSAILogo} className='h-14 w-24 bg-white p-2 rounded-lg' alt="" />FSSAI</li>
-            <li><img src={MSMELogo} className='h-14 w-24 bg-white p-2 rounded-lg' alt="" />MSME</li>
+            <li><img src={FSSAILogo} className='h-14 w-24 bg-white p-2 rounded-lg' alt="" /></li>
+            <li><img src={MSMELogo} className='h-14 w-24 bg-white p-2 rounded-lg' alt="" /></li>
           </ul>
         </div>
       </div>
