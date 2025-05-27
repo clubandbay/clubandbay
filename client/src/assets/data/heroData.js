@@ -54,12 +54,12 @@ export const AboutHero = {
   description: 'From our kitchen to your table, we serve meals made with love, fresh ingredients, and a pinch of passion. Discover food that feels like home.',
   image: Aboutbg,
   button: {
-    text: 'Start Now',
-    link: '/contact',
+    text: 'Our Menu',
+    link: '/menu',
   },
   buttonAbout: {
-    text: 'Learn More',
-    link: '/about',
+    text: 'Inquery',
+    link: '/contact',
   },
   HF1: HomeFood1,
   HF2: HomeFood2,
@@ -73,7 +73,7 @@ export const FAQHero = {
   description: 'Crafted with passion using the freshest ingredients to delight your taste buds',
   image: FAQbg,
   button: {
-    text: 'Start Now',
+    text: 'Inquery',
     link: '/contact',
   },
   buttonAbout: {
@@ -115,8 +115,8 @@ export const SubscriptionHero = {
     link: '/Menu',
   },
   buttonAbout: {
-    text: 'Learn More',
-    link: '/about',
+    text: 'Order On Whatsapp',
+    link: 'https://wa.me/919876543210?text=Hi%2C%20I%20want%20to%20place%20an%20order!',
   },
   HF1: HomeFood1,
   HF2: HomeFood2,

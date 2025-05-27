@@ -8,6 +8,8 @@ import {
 } from 'react-icons/fa';
 import './Footer.css';
 import { Link } from 'react-router-dom';
+import FSSAILogo from '../../assets/fssai-logo.png'
+import MSMELogo from '../../assets/msme_logo.png'
 
 const Footer = () => {
   return (
@@ -62,9 +64,9 @@ const Footer = () => {
 
         <div className="footer-column">
           <h4>Licence</h4>
-          <ul>
-            <li>FSSAI & MSME</li>
-            <li>Powered by My Agro Food Chain (MFC), a registered FSSAI & MSME enterprise</li>
+          <ul className='flex flex-col gap-4'>
+            <li><img src={FSSAILogo} className='h-14 w-24 bg-white p-2 rounded-lg' alt="" />FSSAI</li>
+            <li><img src={MSMELogo} className='h-14 w-24 bg-white p-2 rounded-lg' alt="" />MSME</li>
           </ul>
         </div>
       </div>

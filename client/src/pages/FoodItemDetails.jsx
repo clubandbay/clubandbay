@@ -256,7 +256,7 @@ const FoodItemDetails = () => {
                 viewport={{ once: true }}
                 className="bg-[#0b3171] bg-opacity-5 !p-6 rounded-xl border border-[#0b3171] border-opacity-20"
               >
-                <h2 className="text-2xl font-bold text-white !mb-4">Chef's Recommendation</h2>
+                <h2 className="text-2xl font-bold text-white !mb-4">By Club & Bay</h2>
                 <p className="text-gray-100 italic">"{item.chefRecommendation}"</p>
               </motion.div>
             )}

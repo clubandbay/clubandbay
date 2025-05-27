@@ -1,4 +1,7 @@
 import React from 'react';
+import Chef from '../../assets/man-eating.jpeg'
+import FoodBox from '../../assets/pack-box.jpeg'
+import RollFood from '../../assets/food_6.png'
 
 const RestaurantBanner = () => {
   return (
@@ -174,31 +177,22 @@ const RestaurantBanner = () => {
             <div className="grid grid-cols-2 gap-4 h-full">
               {/* Top Left - Food Image */}
               <div className="relative">
-                <div className="bg-gradient-to-br from-green-100 to-green-200 rounded-2xl !p-6 h-64 sm:h-80 flex items-center justify-center">
-                  <div className="relative w-full h-full bg-white rounded-xl shadow-lg overflow-hidden">
-                    <div className="absolute inset-0 bg-gradient-to-br from-red-400 to-red-600 opacity-20"></div>
-                    <div className="w-full h-full object-cover bg-gradient-to-br from-red-500 to-red-700 rounded-lg flex items-center justify-center">
-                      <div className="text-white font-bold">FOOD</div>
-                    </div>
-                  </div>
+                <div className="bg-gradient-to-br from-green-100 to-green-200 rounded-2xl h-64 sm:h-80 flex items-center justify-center">
+                  <img src={FoodBox} className='h-64 sm:h-80 rounded-2xl' alt="" />
                 </div>
               </div>
 
               {/* Top Right - Chef Image */}
               <div className="relative row-span-2">
                 <div className="bg-gradient-to-br from-gray-100 to-gray-200 rounded-2xl h-full min-h-64 sm:min-h-96 flex items-center justify-center">
-                  <div className="w-full h-full object-cover bg-gradient-to-b from-gray-300 to-gray-500 rounded-2xl flex items-center justify-center">
-                    <div className="text-white font-bold">CHEF</div>
-                  </div>
+                  <img src={Chef} className='rounded-2xl h-full min-h-64 sm:min-h-96 object-cover' alt="" />
                 </div>
               </div>
 
               {/* Bottom Left - Vegetables */}
               <div className="relative">
-                <div className="bg-gradient-to-br from-orange-100 to-orange-200 rounded-2xl !p-4 h-48 sm:h-64 flex items-center justify-center">
-                  <div className="w-full h-full object-cover bg-gradient-to-br from-orange-400 to-orange-600 rounded-lg flex items-center justify-center">
-                    <div className="text-white font-bold">FRESH</div>
-                  </div>
+                <div className="bg-gradient-to-br from-orange-100 to-orange-200 rounded-2xl h-48 sm:h-64 flex items-center justify-center">
+                 <img src={RollFood} className='rounded-2xl h-48 sm:h-64' alt="" />
                 </div>
               </div>
             </div>

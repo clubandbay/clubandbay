@@ -60,6 +60,7 @@
   font-family: serif;
   margin-bottom: 10px;
   text-align: center;
+  color: #e7b745;
 }
 
 .con-container p {
@@ -150,8 +151,8 @@ button:hover {
 
 /* Contact Info Styling */
 .contact-info h4 {
-  margin-top: 20px;
-  color: #eee;
+  margin-top: 30px;
+  color: #e7b745;
   font-size: 1rem;
 }
 
@@ -162,7 +163,7 @@ button:hover {
 }
 
 .contact-info .highlight {
-  color: #f4c16e;
+  color: #ccc;
   font-size: 1.1rem;
   font-weight: bold;
 }
