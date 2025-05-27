@@ -7,14 +7,14 @@ import { GoArrowUpRight } from 'react-icons/go';
 
 const faqData = [
   {
-    question: "What is Club & Bay - BKC Breakfast Company?",
+    question: "What is Club & Bay - BKC Meal Company?",
     answer:
-      "We are a curated breakfast service for professionals commuting to BKC, offering wholesome, chef-crafted meals delivered or available for pickup between 7:00 AM and 9:45 AM. Our menu includes omelettes, paneer-stuffed meals, white/brown/multigrain toast, fresh juices, and more.",
+      "We are a curated meal service for professionals commuting to BKC, offering wholesome, chef-crafted meals delivered or available for pickup between 7:00 AM and 9:45 AM. Our menu includes omelettes, paneer-stuffed meals, white/brown/multigrain toast, fresh juices, and more.",
   },
   {
     question: "What exactly is included in my subscription plan?",
     answer:
-      "Each subscription includes a freshly prepared breakfast combo with your chosen items like egg or paneer options, multigrain/brown/white bread, and cold-pressed juice. Delivery, packaging, and service fees are all included—no hidden charges.",
+      "Each subscription includes a freshly prepared meal combo with your chosen items like egg or paneer options, multigrain/brown/white bread, and cold-pressed juice. Delivery, packaging, and service fees are all included—no hidden charges.",
   },
   {
     question: "Are there any hidden charges like delivery or platform fees?",
@@ -22,14 +22,14 @@ const faqData = [
       "Currently, no. All prices are all-inclusive. We believe in transparent pricing. In the future, platform service fees may apply, which will be clearly communicated in advance.",
   },
   {
-    question: "Can I customize my breakfast?",
+    question: "Can I customize my meal?",
     answer:
       "Yes, within limits. You can choose between vegetarian and egg-based combos and select your preferred juice. Weekly menus are shared so you can pick preferences in advance.",
   },
   {
     question: "Can I pause or skip a day in my subscription?",
     answer:
-      "Absolutely. You may pause or reschedule your breakfast with at least 12-24 hours' notice via WhatsApp or your customer dashboard.",
+      "Absolutely. You may pause or reschedule your meal with at least 12-24 hours' notice via WhatsApp or your customer dashboard.",
   },
   {
     question: "When do I need to place my order?",

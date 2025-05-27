@@ -10,14 +10,14 @@ const FAQpage = () => {
   // FAQ Data
   const faqData = [
     {
-      question: "What is Club & Bay - BKC Breakfast Company?",
+      question: "What is Club & Bay - BKC Meal Company?",
       answer:
-        "We are a curated breakfast service for professionals commuting to BKC, offering wholesome, chef-crafted meals delivered or available for pickup between 7:00 AM and 9:45 AM. Our menu includes omelettes, paneer-stuffed meals, white/brown/multigrain toast, fresh juices, and more.",
+        "We are a curated meal service for professionals commuting to BKC, offering wholesome, chef-crafted meals delivered or available for pickup between 7:00 AM and 9:45 AM. Our menu includes omelettes, paneer-stuffed meals, white/brown/multigrain toast, fresh juices, and more.",
     },
     {
       question: "What exactly is included in my subscription plan?",
       answer:
-        "Each subscription includes a freshly prepared breakfast combo with your chosen items like egg or paneer options, multigrain/brown/white bread, and cold-pressed juice. Delivery, packaging, and service fees are all included—no hidden charges.",
+        "Each subscription includes a freshly prepared meal combo with your chosen items like egg or paneer options, multigrain/brown/white bread, and cold-pressed juice. Delivery, packaging, and service fees are all included—no hidden charges.",
     },
     {
       question: "Are there any hidden charges like delivery or platform fees?",
@@ -25,14 +25,14 @@ const FAQpage = () => {
         "Currently, no. All prices are all-inclusive. We believe in transparent pricing. In the future, platform service fees may apply, which will be clearly communicated in advance.",
     },
     {
-      question: "Can I customize my breakfast?",
+      question: "Can I customize my meal?",
       answer:
         "Yes, within limits. You can choose between vegetarian and egg-based combos and select your preferred juice. Weekly menus are shared so you can pick preferences in advance.",
     },
     {
       question: "Can I pause or skip a day in my subscription?",
       answer:
-        "Absolutely. You may pause or reschedule your breakfast with at least 12-24 hours' notice via WhatsApp or your customer dashboard.",
+        "Absolutely. You may pause or reschedule your meal with at least 12-24 hours' notice via WhatsApp or your customer dashboard.",
     },
     {
       question: "When do I need to place my order?",
@@ -40,7 +40,7 @@ const FAQpage = () => {
         "All orders must be confirmed before 10:00 PM the night prior. This ensures our team schedules fresh preparation early in the morning.",
     },
     {
-      question: "What time do you deliver breakfast?",
+      question: "What time do you deliver meal?",
       answer:
         "We deliver between 7:00 AM and 9:45 AM, Monday to Friday. Alternate Saturdays may be operational (based on volume). We are closed on Sundays.",
     },
@@ -59,7 +59,7 @@ const FAQpage = () => {
     },
     {
       question: "Why do you require advance booking and payment?",
-      answer: "To maintain quality, reduce food waste, and ensure smooth operations, we request intentional, advance payments. This allows us to prepare every breakfast fresh and on time.",
+      answer: "To maintain quality, reduce food waste, and ensure smooth operations, we request intentional, advance payments. This allows us to prepare every meal fresh and on time.",
     },
     {
       question: "Can I get a refund if I don't pick up my order?",
@@ -103,7 +103,7 @@ const FAQpage = () => {
     },
     {
       question: "Do you offer corporate or bulk orders?",
-      answer: "Yes! We partner with offices for regular breakfast deliveries, wellness-focused team meals, and bulk orders. Please contact our team to discuss a custom plan.",
+      answer: "Yes! We partner with offices for regular meal deliveries, wellness-focused team meals, and bulk orders. Please contact our team to discuss a custom plan.",
     },
     {
       question: "Where do you deliver or operate from?",

@@ -7,14 +7,14 @@ const ConBoxes = () => {
     <section className="con-boxes container">
       <div className="con-boxes-heading">
         <h2>We're Always Here to Serve You - Just Reach Out</h2>
-        <p>Whether you're planning a meal, booking a table, or just have a question, our friendly team is just a message away.<br/> Because great food starts with great service.</p>
+        <p>Whether you're planning a meals or just have a question, our friendly team is just a message away.<br/> Because great food starts with great service.</p>
       </div>
 
       <div className="boxes-container">
         {/* Box 1: 24/7 Support */}
         <div className="box">
           <MdSupportAgent className="icon" />
-          <h3>24/7 Support</h3>
+          <h3>WhatsApp Chat</h3>
           <p>We're always here to help you anytime.</p>
           <a href="/support" className="con-btn">Live Chat</a>
         </div>
@@ -23,7 +23,7 @@ const ConBoxes = () => {
         <div className="box">
           <MdEmail className="icon" />
           <h3>Email Us</h3>
-          <p>Drop us a message and we’ll respond quickly.</p>
+          <p>Drop us a message and we'll respond quickly.</p>
           <a href="mailto:your@email.com" className="con-btn">Send Email</a>
         </div>
 

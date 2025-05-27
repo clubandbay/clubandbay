@@ -59,6 +59,14 @@ const Footer = () => {
             <li><FaMapMarkerAlt /> #Pune, Maharashtra</li>
           </ul>
         </div>
+
+        <div className="footer-column">
+          <h4>Licence</h4>
+          <ul>
+            <li>FSSAI & MSME</li>
+            <li>Powered by My Agro Food Chain (MFC), a registered FSSAI & MSME enterprise</li>
+          </ul>
+        </div>
       </div>
 
       <div className="footer-bottom">

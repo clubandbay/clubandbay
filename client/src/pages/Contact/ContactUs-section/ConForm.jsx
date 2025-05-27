@@ -7,9 +7,9 @@ const ConForm = () => {
     <section className="con-section">
       <div className="con-wrapper">
         <div className="con-container">
-          <h2>Online Reservation</h2>
+          <h2>Have a Question/Query?</h2>
           <p>
-            Booking request <span>+88-123-123456</span> or fill out the order form
+            Submit your Queries and we'll get back to you shortly.
           </p>
           <form className="con-form">
             <div className="row">
@@ -18,49 +18,16 @@ const ConForm = () => {
             </div>
 
             <div className="row">
-              <select className='w-[100%] sm:w-auto'>
-                <option>Select Persons</option>
-                <option>1 Person</option>
-                <option>2 Persons</option>
-                <option>3 Persons</option>
-                <option>4+ Persons</option>
-              </select>
-
-              <div className="input-icon">
-                <FaCalendarAlt className='icon-white'/>
-                <input type="date" required />
-              </div>
-
-              <div className="input-icon">
-                <FaClock />
-                <select>
-                  <option>08:00 am</option>
-                  <option>09:00 am</option>
-                  <option>10:00 am</option>
-                  <option>11:00 am</option>
-                  <option>12:00 pm</option>
-                  <option>01:00 pm</option>
-                  <option>02:00 pm</option>
-                  <option>05:00 pm</option>
-                </select>
-              </div>
+              <input type="email" placeholder="Email" required />
             </div>
 
             <div className="row">
-                
-                <select id="subscription" required>
-                    <option value="">Choose Your Subscription Plan</option>
-                    <option value="Club Crystal">Club Crystal [2 Days(Mon & Wed)] - ₹376</option>
-                    <option value="Club Pearl">Club Pearl [3 Days(Mon, Wed & Fri)] - ₹564</option>
-                    <option value="Club Ruby">Club Ruby [5 Days(Mon - Fri)] - ₹1,045</option>
-                    <option value="Club Emerald">Club Emerald [6 Days (Mon-Fri + alt. Sat)] - ₹1,443</option>
-                    <option value="Club Diamond">Club Diamond [6 Days (Mon - Sat)] - ₹1,569</option>
-                </select>
+                  <input type="text" placeholder="Subject" required />
               </div>
 
-            <textarea placeholder="Message" rows="4"></textarea>
+            <textarea placeholder="Message" required rows="4"></textarea>
 
-            <button type="submit">Book a Table</button>
+            <button type="submit">Quere</button>
           </form>
         </div>
 
@@ -76,16 +43,15 @@ const ConForm = () => {
               London 9865, UK
             </p>
 
-            <h4>Lunch Time</h4>
+            <h4>Delivery Time</h4>
             <p>
-              Monday to Sunday<br />
-              11.00 am – 2.30pm
+              9.00 am - 10.00pm
             </p>
 
-            <h4>Dinner Time</h4>
+            <h4>Days Open</h4>
             <p>
-              Monday to Sunday<br />
-              05.00 pm – 10.00pm
+              Monday to Friday<br />
+              & alt. Saturday
             </p>
           </div>
         </div>

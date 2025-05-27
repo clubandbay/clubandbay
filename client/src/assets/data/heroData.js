@@ -20,8 +20,8 @@ export const HomeHero = {
     link: '/menu',
   },
   buttonAbout: {
-    text: 'Learn More',
-    link: '/about',
+    text: 'Order On Whatsapp',
+    link: 'https://wa.me/919876543210?text=Hi%2C%20I%20want%20to%20place%20an%20order!',
   },
   HF1: HomeFood1,
   HF2: HomeFood2,
@@ -89,7 +89,7 @@ export const FAQHero = {
 
 export const ContactHero = {
   title: 'Great Food Starts with a Simple Conversation',
-  description: "We're more than just a restaurant — we're your neighbors, your late-night craving fixers, and your weekend dinner heroes.Let's talk, we're always ready to serve.",
+  description: "We're your neighbors, your craving fixers and your daily meals heroes. Let's talk, we're always ready to serve.",
   image: Contactbg,
   button: {
     text: 'Our Menu',
