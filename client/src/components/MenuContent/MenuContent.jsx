@@ -16,7 +16,7 @@ const MenuContent = () => {
   const navigate = useNavigate();
 
   const menuCategories = [
-    { id: 'pizza', name: 'Pizza', icon: <FaPizzaSlice /> },
+    { id: 'week1', name: 'WEEK1', icon: <FaPizzaSlice /> },
     { id: 'burgers', name: 'Burgers', icon: <FaHamburger /> },
     { id: 'seafood', name: 'Seafood', icon: <FaFish /> },
     { id: 'desserts', name: 'Desserts', icon: <FaIceCream /> },

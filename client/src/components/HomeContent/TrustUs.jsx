@@ -178,7 +178,7 @@ const RestaurantBanner = () => {
               {/* Top Left - Food Image */}
               <div className="relative">
                 <div className="bg-gradient-to-br from-green-100 to-green-200 rounded-2xl h-64 sm:h-80 flex items-center justify-center">
-                  <img src={FoodBox} className='h-64 sm:h-80 rounded-2xl' alt="" />
+                  <img src={FoodBox} className='h-64 sm:h-80 rounded-2xl object-cover' alt="" />
                 </div>
               </div>
 
@@ -192,7 +192,7 @@ const RestaurantBanner = () => {
               {/* Bottom Left - Vegetables */}
               <div className="relative">
                 <div className="bg-gradient-to-br from-orange-100 to-orange-200 rounded-2xl h-48 sm:h-64 flex items-center justify-center">
-                 <img src={RollFood} className='rounded-2xl h-48 sm:h-64' alt="" />
+                 <img src={RollFood} className='rounded-2xl h-48 sm:h-64 object-cover' alt="" />
                 </div>
               </div>
             </div>
