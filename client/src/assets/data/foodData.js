@@ -13,7 +13,7 @@ import CoconutWaterJuiceImage from '../juiceimages/CoconutWater.png'
 const foodApi = {
   getAllItems: () => {
     return {
-      pizza: [
+      week1: [
         {
           id: 1,
           name: "Margherita Classic",
