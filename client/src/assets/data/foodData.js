@@ -22,11 +22,11 @@ import WeekTwoImgFour from "../Menu/week2/egg-burgar.png";
 import WeekTwoImgFive from "../Menu/week2/egg-pop.png";
 
 //week 3 menu images
-import WeekThreeImgOne from "../Menu/week-3/Green-Garden.png";
-import WeekThreeImgTwo from "../Menu/week-3/Red-pepper-omelette.png";
-import WeekThreeImgThree from "../Menu/week-3/Root-veg-fold.png";
-import WeekThreeImgFour from "../Menu/week-3/Corn-Herbs-Eggwich.png";
-import WeekThreeImgFive from "../Menu/week-3/Mushroom-Burst-Roll-Up.png";
+import WeekThreeImgOne from "../Menu/week-3/green-garden.png";
+import WeekThreeImgTwo from "../Menu/week-3/red-pepper-omelette.png";
+import WeekThreeImgThree from "../Menu/week-3/root-veg-fold.png";
+import WeekThreeImgFour from "../Menu/week-3/corn-herbs-eggwich.png";
+import WeekThreeImgFive from "../Menu/week-3/mushroom-burst-roll-up.png";
 
 //week 4 menu images
 import WeekFourImgOne from "../Menu/week-4/Super-Greens-Omelette.jpeg";
