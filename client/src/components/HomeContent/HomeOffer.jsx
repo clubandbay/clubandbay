@@ -7,7 +7,7 @@ import Burger from '../../assets/club-ruby.png'
 import { Link } from 'react-router-dom';
 
 import FoodImg1 from '../../assets/Menu/week1/classic-fold.png'
-import FoodImg2 from '../../assets/Menu/Week3/Red-pepper-omelette.png'
+import FoodImg2 from '../../assets/Menu/Week3/red-pepper-omelette.png'
 import FoodImg3 from '../../assets/Menu/week2/egg-burgar.png'
 
 const HomeOffer = () => {
