@@ -22,17 +22,17 @@ import WeekTwoImgFour from "../Menu/week2/egg-burgar.png";
 import WeekTwoImgFive from "../Menu/week2/egg-pop.png";
 
 //week 3 menu images
-import WeekThreeImgOne from "../Menu/week-3/green-gar.jpeg";
-import WeekThreeImgTwo from "../Menu/week-3/red-pepper-omelette.png";
-import WeekThreeImgThree from "../Menu/week-3/root-veg-fold.png";
-import WeekThreeImgFour from "../Menu/week-3/corn-herbs-eggwich.png";
-import WeekThreeImgFive from "../Menu/week-3/mushroom-burst-roll-up.png";
+import WeekThreeImgOne from "../Menu/week3/green-gar.jpeg";
+import WeekThreeImgTwo from "../Menu/week3/red-pepper-omelette.png";
+import WeekThreeImgThree from "../Menu/week3/root-veg-fold.png";
+import WeekThreeImgFour from "../Menu/week3/corn-herbs-eggwich.png";
+import WeekThreeImgFive from "../Menu/week3/mushroom-burst-roll-up.png";
 
 //week 4 menu images
-import WeekFourImgOne from "../Menu/week-4/Super-Greens-Omelette.jpeg";
-import WeekFourImgTwo from "../Menu/week-4/Garlic-Mint-Turmeric-Omelette.png";
-import WeekFourImgThree from "../Menu/week-4/Cottage-Cheese-Indian-Masala-Omlette.png";
-import WeekFourImgFour from "../Menu/week-4/Mushroom-Omlette.png";
+import WeekFourImgOne from "../Menu/week4/Super-Greens-Omelette.jpeg";
+import WeekFourImgTwo from "../Menu/week4/Garlic-Mint-Turmeric-Omelette.png";
+import WeekFourImgThree from "../Menu/week4/Cottage-Cheese-Indian-Masala-Omlette.png";
+import WeekFourImgFour from "../Menu/week4/Mushroom-Omlette.png";
 
 // veg images
 import VegImg1 from "../Menu/Paneer/Paneer-Burji-with-Bread.png";
