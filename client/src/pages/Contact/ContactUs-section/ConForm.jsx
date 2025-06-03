@@ -45,13 +45,14 @@ const ConForm = () => {
 
             <h4>Delivery Time</h4>
             <p>
-              9.00 am - 10.00pm
+              9:00 am - 10:00am
             </p>
 
             <h4>Days Open</h4>
             <p>
               Monday to Friday<br />
-              & alt. Saturday
+              & alt. Saturday <br />
+              9:00 am to 10:00 am 
             </p>
           </div>
         </div>

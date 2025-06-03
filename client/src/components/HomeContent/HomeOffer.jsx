@@ -1,35 +1,37 @@
 import React, { useEffect, useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence} from 'framer-motion';
 import { MdKeyboardArrowLeft } from "react-icons/md";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import OfferBG from '../../assets/offerbg.jpg'
-import Burger from '../../assets/burgerbg.png'
-import Food2 from '../../assets/food_2.png'
-import Food3 from '../../assets/food_3.png'
-import Food4 from '../../assets/food_4.png'
+import Burger from '../../assets/club-ruby.png'
+import { Link } from 'react-router-dom';
+
+import FoodImg1 from '../../assets/Menu/week1/classic-fold.png'
+import FoodImg2 from '../../assets/Menu/Week-3/Red-pepper-omelette.png'
+import FoodImg3 from '../../assets/Menu/week2/egg-burgar.png'
 
 const HomeOffer = () => {
   const offers = [
     {
-      title: 'Pizza Power Hour',
-      image: Food3,
-      description: 'Large pizza for the price of a medium - today only!',
+      title: 'Classic Folded Omelette (Semi-Moon)',
+      image: FoodImg1,
+      description: 'The timeless style — soft inside, crisp edges. Great for adding fillings like Onions, mint, etc.',
       buttonText: 'View more',
-      buttonLink: '/pizza',
+      buttonLink: 'menu/week1/classic-folded-omelette',
     },
     {
-      title: 'Coffee Lovers',
-      image: Food2,
-      description: 'Buy one get one free on all coffee beverages.',
+      title: 'Red Pepper Omelette',
+      image: FoodImg2,
+      description: 'Bell pepper, cherry tomato, cheese',
       buttonText: 'View more',
-      buttonLink: '/coffee',
+      buttonLink: 'menu/week3/red-pepper-omelette',
     },
     {
-      title: 'Burger Bonanza',
-      image: Food4,
-      description: 'Get 20% off on all burgers this weekend!',
+      title: 'Omelette Burger',
+      image: FoodImg3,
+      description: 'Egg patty sandwiched between whole grain buns or multigrain toast.',
       buttonText: 'View more',
-      buttonLink: '/burgers',
+      buttonLink: 'menu/week2/omelette-burger',
     },
   ];
 
@@ -41,7 +43,7 @@ const HomeOffer = () => {
     const intervalId = setInterval(() => {
       setDirection(1);
       setCurrentIndex((prevIndex) => (prevIndex + 1) % offers.length);
-    }, 3000);
+    }, 5000);
     return () => clearInterval(intervalId);
   }, [offers.length]);
 
@@ -104,29 +106,33 @@ const HomeOffer = () => {
           <div className="hidden sm:block w-14 h-[2px] bg-[#e7b745]"></div>
         </div>
         <p className="text-gray-900 max-w-2xl !mx-auto">
-          Carefully crafted dishes made with the finest ingredients
+          Check our most popular subscription made with fresh ingredients
         </p>
       </motion.div>
 
       <div className="flex flex-col lg:flex-row gap-6 md:gap-8 lg:gap-10 justify-center">
         {/* Left Side - Fixed Offer */}
         <div className={`w-full lg:flex-1 lg:min-w-[350px] lg:max-w-[500px] h-[400px] md:h-[500px] text-white rounded-2xl shadow-xl !p-6 sm:!p-8 md:!p-10 flex flex-col sm:flex-row items-center`}
-        style={{backgroundImage: `url(${OfferBG})`}}>
+          style={{ backgroundImage: `url(${OfferBG})` }}>
           {/* Offer Content */}
           <div className="flex-1 !pr-0 sm:!pr-4 md:!pr-6 text-center sm:text-left">
             <h4 className="text-sm sm:text-base md:text-lg italic text-[#e7b745] !mb-2 sm:!mb-3">
-              today's best deal
+              💎 Club Ruby
             </h4>
-            <h3 className="text-2xl sm:text-3xl md:text-4xl font-black !mb-2 sm:!mb-3">
-              TODAY <br />
-              <span className="text-[#e7b745]">SPECIAL</span>
+            <h3 className="text-xl sm:text-2xl md:text-3xl font-black !mb-2 sm:!mb-3">
+              Most Popular <br />
+              <span className="text-[#e7b745]">Subscription</span>
             </h3>
-            <p className="text-xl sm:text-2xl font-semibold !mb-4 sm:!mb-6 md:!mb-8">
-              CHEESE<span className="text-[#e7b745] font-bold"> BURGER</span>
+            <p className="text-lg sm:text-xl font-semibold !mb-4 sm:!mb-6 md:!mb-8">
+              Fuel Your Week,  <span className="text-[#e7b745] font-bold">the Smart Way!</span>
             </p>
-            <button className="bg-green-500 text-white font-bold !py-3 sm:!py-4 !px-6 sm:!px-8 rounded-xl hover:bg-green-700 transition-colors duration-300 text-base sm:text-lg">
-              View More
-            </button>
+            <Link to='/services'>
+              <motion.button
+                className="!px-4 !py-2 md:!px-4 md:!py-2 !rounded-full !bg-transparent !border-2 !border-[#e7b745] !text-[#e7b745] hover:!bg-[#0b3171] font-semibold md:font-bold text-md md:text-xl flex items-center shadow-xl hover:shadow-2xl transition-all duration-300"
+              >
+                View All Subs..
+              </motion.button>
+            </Link>
           </div>
           {/* Offer Image Section */}
           <div className="text-center mt-4 sm:mt-0 relative sm:-left-4 md:-left-6">
@@ -135,13 +141,13 @@ const HomeOffer = () => {
               alt="Cheese Burger"
               className="w-40 sm:w-48 md:w-64 h-auto rounded-xl"
             />
-            <p className="text-[#e7b745] font-bold text-xl sm:text-2xl !mt-2 sm:!mt-3">$59.00</p>
+            <p className="text-[#e7b745] font-bold text-xl sm:text-2xl !mt-2 sm:!mt-3">Start With - ₹1045</p>
           </div>
         </div>
 
         {/* Right Side - Rotating Offer */}
         <div className="w-full lg:flex-1 lg:min-w-[350px] lg:max-w-[700px] h-[400px] md:h-[500px] bg-black text-white rounded-2xl !p-6 sm:!p-8 md:!p-10 flex flex-row items-center justify-between gap-4 sm:gap-6 md:gap-8 relative overflow-hidden"
-        style={{backgroundImage: `url(${OfferBG})`}}>
+          style={{ backgroundImage: `url(${OfferBG})` }}>
           {/* Left Arrow */}
           <button
             onClick={handlePrev}
@@ -165,19 +171,19 @@ const HomeOffer = () => {
               {/* Text Content */}
               <div className="flex-1 order-2 sm:order-1 text-center sm:text-left">
                 <h4 className="text-sm sm:text-base md:text-lg font-bold text-[#e7b745] uppercase !mb-2 sm:!mb-3">
-                  CRISPY, EVERY BITE TASTE
+                  Our Popular & Healthy Meals
                 </h4>
                 <h3 className="text-2xl sm:text-3xl md:text-4xl font-extrabold !mb-1 sm:!mb-2 leading-tight uppercase">
                   {offers[currentIndex].title}
                 </h3>
                 <div className="bg-[#e7b745] text-black font-bold !py-1 !px-2 sm:!px-3 rounded-full text-xs sm:text-sm inline-block !mb-3 sm:!mb-4 md:!mb-5">
-                  50% OFF
+                  Popular Meals
                 </div>
                 <p className="text-gray-300 text-sm sm:text-base !mb-4 sm:!mb-5 md:!mb-6">
                   {offers[currentIndex].description}
                 </p>
                 <button
-                  className="bg-green-500 text-white font-bold !py-3 sm:!py-4 !px-6 sm:!px-8 !mx-auto rounded-xl hover:bg-green-700 transition-colors duration-300 flex items-center gap-2 sm:gap-3 text-base sm:text-lg sm:!mx-0"
+                  className="!px-4 !py-2 md:!px-4 md:!py-2 !rounded-full !bg-transparent !border-2 !border-[#e7b745] !text-[#e7b745] hover:!bg-[#0b3171] font-semibold md:font-bold text-md md:text-xl flex items-center shadow-xl hover:shadow-2xl transition-all duration-300"
                   onClick={() => (window.location.href = offers[currentIndex].buttonLink)}
                 >
                   {offers[currentIndex].buttonText}
@@ -210,8 +216,8 @@ const HomeOffer = () => {
                 key={index}
                 onClick={() => handleRadioClick(index)}
                 className={`!w-1 !h-1 sm:!w-2 sm:!h-2 !rounded-full transition-all duration-300 ${currentIndex === index
-                    ? '!bg-[#e7b745] scale-125'
-                    : '!bg-gray-500 hover:!bg-gray-400'
+                  ? '!bg-[#e7b745] scale-125'
+                  : '!bg-gray-500 hover:!bg-gray-400'
                   }`}
                 aria-label={`Go to offer ${index + 1}`}
               />

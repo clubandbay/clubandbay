@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { FaHamburger, FaStar, FaUtensils, FaGlassWhiskey, FaLeaf } from 'react-icons/fa';
 import { GiChickenLeg, GiMeal } from 'react-icons/gi';
-import Food2 from '../../assets/delBurger.jpg';
+import Food2 from '../../assets/man-eating-2.jpeg';
 
 const HomeBanner = () => {
   // Animation variants
@@ -111,7 +111,7 @@ const HomeBanner = () => {
             transition={{ duration: 0.5, type: "spring" }}
             className="absolute top-8 left-4 md:left-12 text-[#e7b745] font-black text-4xl md:text-5xl rotate-[-15deg] bg-white/80 !px-4 !py-2 rounded-xl shadow-lg"
           >
-            BURGER
+            FRESH MEALS
           </motion.div>
 
           <motion.div
@@ -119,7 +119,7 @@ const HomeBanner = () => {
             animate="bounce"
             className="absolute bottom-12 left-8 bg-[#0b3171] text-white font-bold !px-5 !py-2 rounded-full shadow-xl text-lg rotate-[-12deg]"
           >
-            SINCE 1985
+            SEE OUR Subscriptions
           </motion.div>
 
           <motion.div
@@ -127,7 +127,7 @@ const HomeBanner = () => {
             animate="float"
             className="absolute bottom-4 right-4 bg-[#e7b745] text-[#0b3171] font-extrabold !px-6 !py-3 rounded-full shadow-2xl text-2xl"
           >
-            $4.99
+            100% Healty Food
           </motion.div>
         </motion.div>
       </div>
@@ -205,9 +205,6 @@ const HomeBanner = () => {
         >
           <p className="font-bold text-lg text-[#0b3171]">
             "CUSTOMER SATISFACTION IS OUR HIGHEST PRIORITY."
-          </p>
-          <p className="text-[#e7b745] font-semibold !mt-1">
-            - BRENDON GARREY, HEAD CHEF
           </p>
         </motion.div>
       </div>

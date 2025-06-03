@@ -175,10 +175,10 @@ const HomeSubscription = () => {
                 className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent !p-6"
               >
                 <h3 className="text-xl md:text-2xl font-bold text-white">
-                  Exclusive Member Benefits
+                  See our all subscriptions
                 </h3>
                 <p className="text-gray-300">
-                  Priority reservations, special events, and more
+                  You will get more organic & healthy meals
                 </p>
               </motion.div>
             </motion.div>

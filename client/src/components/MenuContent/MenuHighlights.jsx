@@ -7,25 +7,25 @@ const MenuHighlights = () => {
     {
       id: 1,
       title: "Best Quality Food",
-      description: "Excellence projecting is devonshire dispatched remarkably on estimating. Side in so life past.",
+      description: "Only the finest, freshest ingredients—cooked with care, just like home. No compromises, ever.",
       icon: <FaUtensils className="!text-3xl !text-amber-500" />
     },
     {
       id: 2,
       title: "Home delivery",
-      description: "Excellence projecting is devonshire dispatched remarkably on estimating. Side in so life past.",
+      description: "Piping hot meals delivered straight from our kitchen to your office. Fast, reliable, and always on time.",
       icon: <FaMotorcycle className="!text-3xl !text-amber-500" />
     },
     {
       id: 3,
       title: "Real Taste",
-      description: "Excellence projecting is devonshire dispatched remarkably on estimating. Side in so life past.",
+      description: "Authentic flavors that bring comfort and satisfaction in every bite. Nothing artificial—just real, honest food.",
       icon: <FaLeaf className="!text-3xl !text-amber-500" />
     },
     {
       id: 4,
       title: "Traditional food",
-      description: "Excellence projecting is devonshire dispatched remarkably on estimating. Side in so life past.",
+      description: "Handmade recipes rooted in tradition. Experience the warmth of homemade cooking, every single day.",
       icon: <FaChessRook className="!text-3xl !text-amber-500" />
     }
   ];

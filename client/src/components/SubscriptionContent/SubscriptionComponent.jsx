@@ -19,6 +19,7 @@ const SubscriptionComponent = () => {
     {
       name: 'Club Crystal',
       days: '2 days/week',
+      dname: 'Monday & Wednesday',
       basePrice: 358,
       gst: 18,
       totalPrice: 376,
@@ -33,6 +34,7 @@ const SubscriptionComponent = () => {
     {
       name: 'Club Pearl',
       days: '3 days/week',
+      dname: 'Monday, Wednesday & Friday',
       basePrice: 537,
       gst: 27,
       totalPrice: 564,
@@ -47,6 +49,7 @@ const SubscriptionComponent = () => {
     {
       name: 'Club Ruby',
       days: '5 days/week',
+      dname: 'Monday to Friday',
       basePrice: 995,
       gst: 50,
       totalPrice: 1045,
@@ -60,7 +63,8 @@ const SubscriptionComponent = () => {
     },
     {
       name: 'Club Emerald',
-      days: '5 days/week + 2 alternate working saturday only',
+      days: '5 days/week',
+      dname: 'Monday to Friday + 2 alternate working saturday only',
       basePrice: 1374,
       gst: 69,
       totalPrice: 1443,
@@ -75,6 +79,7 @@ const SubscriptionComponent = () => {
     {
       name: 'Club Diamond',
       days: '6 days/week',
+      dname: 'Monday to Saturday',
       basePrice: 1494,
       gst: 75,
       totalPrice: 1569,
@@ -152,7 +157,7 @@ const SubscriptionComponent = () => {
                       {plan.icon}
                     </div>
                     <div className="text-right">
-                      <span className="text-xs font-medium text-white">PER MONTH</span>
+                      <span className="text-xs font-medium text-white">PER WEEK</span>
                       <div className="text-2xl font-bold text-[#e7b745]">₹{plan.totalPrice}</div>
                     </div>
                   </div>
@@ -163,8 +168,13 @@ const SubscriptionComponent = () => {
                   </h3>
                   
                   {/* Days */}
-                  <p className="text-sm text-white !mb-6">
+                  <p className="text-sm text-white !mb-2">
                     {plan.days}
+                  </p>
+
+                  {/* Days */}
+                  <p className="text-sm text-white !mb-6">
+                    {plan.dname}
                   </p>
                   
                   {/* Divider */}

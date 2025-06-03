@@ -52,7 +52,7 @@ a{
 .menuhero_bg,
 .aboutcard_bg
 .contacthero_bg{
-  background-image: url("./assets/blackbg.jpg");
+  background-image: url("./assets/offerbg.jpg");
   background-size: cover;
   background-position: center;
 }
