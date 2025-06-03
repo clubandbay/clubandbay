@@ -22,7 +22,7 @@ import WeekTwoImgFour from "../Menu/week2/egg-burgar.png";
 import WeekTwoImgFive from "../Menu/week2/egg-pop.png";
 
 //week 3 menu images
-import WeekThreeImgOne from "../Menu/week-3/green-garden.png";
+import WeekThreeImgOne from "../Menu/week-3/green-gar.jpeg";
 import WeekThreeImgTwo from "../Menu/week-3/red-pepper-omelette.png";
 import WeekThreeImgThree from "../Menu/week-3/root-veg-fold.png";
 import WeekThreeImgFour from "../Menu/week-3/corn-herbs-eggwich.png";
