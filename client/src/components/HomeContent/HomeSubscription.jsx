@@ -9,6 +9,11 @@ import subscriptionImg2 from '../../assets/food_2.png';
 import HomeSubBG from '../../assets/homesubbg.jpg';
 import { useNavigate } from 'react-router-dom';
 
+import { GiOysterPearl } from "react-icons/gi";
+import { DiRuby } from "react-icons/di";
+import { IoDiamond } from "react-icons/io5";
+import { GiEmerald } from "react-icons/gi";
+
 const HomeSubscription = () => {
   const [hoveredRow, setHoveredRow] = useState(null);
   const navigate = useNavigate();
@@ -18,7 +23,7 @@ const HomeSubscription = () => {
       id: 1,
       name: "Club Crystal",
       days: "2 days/week",
-      totalPrice: 376,
+      totalPrice: 378,
       color: "from-blue-400 to-cyan-400",
       icon: <FaGem className='text-[#e7b745]' />,
     },
@@ -26,9 +31,9 @@ const HomeSubscription = () => {
       id: 2,
       name: "Club Pearl",
       days: "3 days/week",
-      totalPrice: 564,
+      totalPrice: 567,
       color: "from-purple-400 to-pink-400",
-      icon: <FaStar className='text-[#e7b745]' />,
+      icon: <GiOysterPearl className='text-[#e7b745]' />,
     },
     {
       id: 3,
@@ -36,23 +41,23 @@ const HomeSubscription = () => {
       days: "5 days/week",
       totalPrice: 1045,
       color: "from-red-400 to-orange-400",
-      icon: <FaFire className='text-[#e7b745]' />,
+      icon: <DiRuby className='text-[#e7b745]' />,
     },
     {
       id: 4,
       name: "Club Emerald",
       days: "6 days/week",
-      totalPrice: 1443,
+      status: "Coming Soon",
       color: "from-green-400 to-emerald-400",
-      icon: <FaHandSparkles className='text-[#e7b745]' />,
+      icon: <GiEmerald className='text-[#e7b745]' />,
     },
     {
       id: 5,
       name: "Club Diamond",
       days: "6 days/week",
-      totalPrice: 1569,
+      status: "Coming Soon",
       color: "from-violet-400 to-purple-600",
-      icon: <FaCrown className='text-[#e7b745]' />,
+      icon: <IoDiamond className='text-[#e7b745]' />,
     }
   ];
 
@@ -246,8 +251,8 @@ const HomeSubscription = () => {
                       onHoverStart={() => setHoveredRow(plan.id)}
                       onHoverEnd={() => setHoveredRow(null)}
                       className={`!px-6 !py-4 transition-all duration-300 ${hoveredRow === plan.id
-                          ? 'bg-gradient-to-r from-white/5 to-white/10'
-                          : 'hover:bg-white/5'
+                        ? 'bg-gradient-to-r from-white/5 to-white/10'
+                        : 'hover:bg-white/5'
                         }`}
                     >
                       <div className="grid grid-cols-3 gap-4">
@@ -282,8 +287,17 @@ const HomeSubscription = () => {
                             animate={hoveredRow === plan.id ? { scale: 1.1 } : { scale: 1 }}
                             className="inline-block"
                           >
-                            <div className="text-lg md:text-xl font-bold text-white">₹{plan.totalPrice}</div>
-                            <div className="text-xs md:text-sm text-gray-400">with GST</div>
+                            {
+                              plan.status ? (
+                                <div className="text-lg md:text-xl font-bold text-white">{plan.status}</div>
+                              ) : (
+                                <>
+                                  <div className="text-lg md:text-xl font-bold text-white">₹{plan.totalPrice}</div>
+                                  <div className="text-xs md:text-sm text-gray-400">with GST</div>
+                                </>
+                              )
+                            }
+
                           </motion.div>
                         </div>
                       </div>

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { FaGem, FaStar, FaBolt, FaCrown, FaInfoCircle, FaExclamationTriangle, FaCheck, FaArrowRight } from 'react-icons/fa';
+import { FaGem, FaInfoCircle, FaExclamationTriangle } from 'react-icons/fa';
 import { GiOysterPearl } from "react-icons/gi";
 import { DiRuby } from "react-icons/di";
 import { IoDiamond } from "react-icons/io5";
@@ -29,7 +29,7 @@ const SubscriptionComponent = () => {
       basePrice: 360,
       gst: 18,
       totalPrice: 378,
-      bestFor: 'Light users / entry plan',
+      bestFor: 'Entry plan',
       icon: <FaGem className="w-6 h-6" />,
       gradient: 'from-cyan-500 to-blue-600',
       bgColor: 'bg-cyan-500/5',
@@ -44,7 +44,7 @@ const SubscriptionComponent = () => {
       basePrice: 539,
       gst: 28,
       totalPrice: 567,
-      bestFor: 'Part-timers',
+      bestFor: 'Regular users',
       icon: <GiOysterPearl className="w-6 h-6" />,
       gradient: 'from-slate-500 to-gray-600',
       bgColor: 'bg-gray-500/5',

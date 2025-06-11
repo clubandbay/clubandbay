@@ -249,18 +249,6 @@ const HomeMenu = () => {
             </div>
           )}
         </div>
-
-        {/* Footer Note */}
-        <motion.p
-          className="text-center text-sm !mt-12 text-gray-400"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.3 }}
-        >
-          During winter daily from{" "}
-          <span className="text-[#e7b745] font-medium">7:00 pm</span> to{" "}
-          <span className="text-[#e7b745] font-medium">9:00 pm</span>
-        </motion.p>
       </div>
     </div>
   );

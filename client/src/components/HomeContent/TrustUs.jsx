@@ -1,6 +1,6 @@
 import React from 'react';
 import Chef from '../../assets/man-eating.jpeg'
-import FoodBox from '../../assets/pack-box.jpeg'
+import FoodBox from '../../assets/juiceimages/AppleJuice.png'
 import RollFood from '../../assets/food_6.png'
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
