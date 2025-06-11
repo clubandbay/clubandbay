@@ -16,7 +16,7 @@ const ConBoxes = () => {
           <MdSupportAgent className="icon" />
           <h3>WhatsApp Chat</h3>
           <p>We're always here to help you anytime.</p>
-          <a href="/support" className="con-btn">Live Chat</a>
+          <a href="https://wa.me/919930660900" className="con-btn" target='_blank' rel='noopener noreferrer'>Live Chat</a>
         </div>
 
         {/* Box 2: Email Us */}
@@ -24,7 +24,7 @@ const ConBoxes = () => {
           <MdEmail className="icon" />
           <h3>Email Us</h3>
           <p>Drop us a message and we'll respond quickly.</p>
-          <a href="mailto:your@email.com" className="con-btn">Send Email</a>
+          <a href="food@gmail.com" className="con-btn">Send Email</a>
         </div>
 
         {/* Box 3: Call Us */}
@@ -32,7 +32,7 @@ const ConBoxes = () => {
           <MdCall className="icon" />
           <h3>Call Us to Book</h3>
           <p>Connect with us directly via phone.</p>
-          <a href="tel:+1234567890" className="con-btn">Call Now</a>
+          <a href="tel:+919930630900" className="con-btn">Call Now</a>
         </div>
 
         {/* Box 4: Location */}
@@ -41,14 +41,14 @@ const ConBoxes = () => {
           <h3>Location</h3>
           <p>Visit our office for face-to-face support.</p>
           <a
-            href="https://www.google.com/maps?q=your+location"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="con-btn"
+          href="https://www.google.com/maps?q=3+Linking+Rd,+Khar,+Bandra+West,+Mumbai,+Maharashtra+400050"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="con-btn"
           >
-            View Map
-          </a>
-        </div>
+            View
+            </a>
+            </div>
       </div>
     </section>
   );

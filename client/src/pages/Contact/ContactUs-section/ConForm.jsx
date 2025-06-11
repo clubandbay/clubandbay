@@ -35,7 +35,7 @@ const ConForm = () => {
           <h2>Contact Us</h2>
           <div className="contact-info">
             <h4>Booking Request</h4>
-            <p className="highlight">+91 9087654321</p>
+            <p className="highlight">+91 9930630900<br/>+91 9930660900</p>
 
             <h4>Location</h4>
             <p>

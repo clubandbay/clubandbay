@@ -11,7 +11,7 @@ const WhyUs = () => {
     {
       number: '02',
       title: 'Welcoming Atmosphere',
-      description: 'Experience a warm, inviting, and comfortable atmosphere, ideal for meeting friends, working, or simply unwinding in our friendly cafe.'
+      description: 'Enjoy food made with care using only fresh, high-quality ingredients. Every dish is thoughtfully prepared to bring out natural flavors and nourishing goodness.'
     },
     {
       number: '03',

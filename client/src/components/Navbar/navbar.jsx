@@ -115,7 +115,7 @@ const Navbar = () => {
             </Link>
           </div>
           {/* Call Now Button */}
-          <Link to="tel:+919876543210">
+          <Link to="tel:+91 9930630900">
             <button className="bg-transparent text-[#e7b745] text-base border-2 border-[#e7b745] !px-6 !py-2 rounded-full hover:bg-white hover:text-[#0b3171] hover:shadow-lg transition-all duration-300">
               Call Now
             </button>

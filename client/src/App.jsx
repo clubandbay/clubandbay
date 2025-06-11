@@ -10,6 +10,8 @@ import Footer from './components/Footer/Footer';
 import FoodItemDetails from './pages/FoodItemDetails';
 import FAQpage from './pages/FAQ/FAQpage';
 import ScrollToTop from './components/Others/ScrollToTop';
+import PrivacyPolicy from './components/Privacy-Policy/Privacy-Policy';
+import TermsConditions from './components/Terms-Conditions/terms-conditions';
 
 const App = () => {
   return (
@@ -24,6 +26,8 @@ const App = () => {
          <Route path="/services" element={<Services />} />
          <Route path="/contact" element={<ContactUs />} />
          <Route path="/faq" element={<FAQpage />} />
+         <Route path="/privacy-policy" element={<PrivacyPolicy/>} />
+         <Route path="/terms-conditions" element={<TermsConditions/>} />
          
          <Route path="/menu/:category/:slug" element={<FoodItemDetails />} />
        </Routes>

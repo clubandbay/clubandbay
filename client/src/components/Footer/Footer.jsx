@@ -47,8 +47,8 @@ const Footer = () => {
         <div className="footer-column">
           <h4>Important Links</h4>
           <ul>
-            <li><a href="/privacy">Privacy Policy</a></li>
-            <li><a href="/terms">Terms & Conditions</a></li>
+            <li><a href="/privacy-policy">Privacy Policy</a></li>
+            <li><a href="/terms-conditions">Terms & Conditions</a></li>
             <li><a href="/faq">FAQ</a></li>
           </ul>
         </div>
@@ -56,7 +56,7 @@ const Footer = () => {
         <div className="footer-column">
           <h4>Contact Info</h4>
           <ul>
-            <li><FaPhoneAlt /> <a href="tel:+919876543210">+91 9876543210</a></li>
+            <li><FaPhoneAlt /> <a href="tel:+919930630900">+91 9930630900</a></li>
             <li><FaEnvelope /> <a href="mailto:food@gmail.com">food@gmail.com</a></li>
             <li><FaMapMarkerAlt /> #Pune, Maharashtra</li>
           </ul>
@@ -72,7 +72,7 @@ const Footer = () => {
       </div>
 
       <div className="footer-bottom">
-        © 2025 Powered by – My Agro Food Chain (MFC)
+        © 2025 Powered by - My Agro Food Chain (MFC)
       </div>
     </footer>
   );

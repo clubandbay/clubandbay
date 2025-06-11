@@ -27,7 +27,7 @@ export const HomeHero = {
   },
   buttonAbout: {
     text: 'Order On Whatsapp',
-    link: 'https://wa.me/919876543210?text=Hi%2C%20I%20want%20to%20place%20an%20order!',
+    link: 'https://wa.me/919930660900?text=Hi%2C%20I%20want%20to%20place%20an%20order!',
   },
   HF1: HomeFood1,
   HF2: HomeFood2,
@@ -37,12 +37,12 @@ export const HomeHero = {
 }
 
 export const MenuHero = {
-  title: "Today’s Menu – Simple. Fresh. Filling.",
+  title: "Today,s Menu - Simple. Fresh. Filling.",
   description: 'Discover a rotating selection of freshly prepared meals crafted for working professionals. No fluff, just flavor. We keep it limited and delicious so your choice is always quick and satisfying.',
   image: Menubg,
   button: {
     text: 'Order On Whatsapp',
-    link: 'https://wa.me/919876543210?text=Hi%2C%20I%20want%20to%20place%20an%20order!',
+    link: 'https://wa.me/919930660900?text=Hi%2C%20I%20want%20to%20place%20an%20order!',
   },
   buttonAbout: {
     text: 'Learn More',
@@ -75,7 +75,7 @@ export const AboutHero = {
 }
 
 export const FAQHero = {
-  title: 'Got Questions? We’ve Got Answers.',
+  title: "Got Questions? We've Got Answers.",
   description: 'From delivery zones to subscription options, everything you need to know about how our food makes it from our kitchen to your desk is right here.',
   image: FAQbg,
   button: {
@@ -122,7 +122,7 @@ export const SubscriptionHero = {
   },
   buttonAbout: {
     text: 'Order On Whatsapp',
-    link: 'https://wa.me/919876543210?text=Hi%2C%20I%20want%20to%20place%20an%20order!',
+    link: 'https://wa.me/919930660900?text=Hi%2C%20I%20want%20to%20place%20an%20order!',
   },
   HF1: HomeFood7,
   HF2: HomeFood5,

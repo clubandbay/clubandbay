@@ -4,6 +4,7 @@ import aboutwel from '../../../assets/aboutwel.jpg';
 import aboutwel2 from '../../../assets/aboutwel2.jpg';
 import aboutwel3 from '../../../assets/aboutwel3.jpg';
 import aboutwel4 from '../../../assets/aboutwel4.jpg';
+import { Link } from 'react-router-dom';
 
 const Welcome = () => {
   return (
@@ -21,13 +22,11 @@ const Welcome = () => {
           Welcome to <span role="img" aria-label="fork and knife">🍴</span> Club & Bay
         </h1>
         <p>
-          A warm and inviting atmosphere awaits in this neighborhood cafe, where the 
-          friendly vibe of a club meets the tranquil feel of the bay. We are passionate 
-          about preparing delicious, high-quality food and drinks, always using fresh 
-          ingredients and adding our personal care.<br/> Whether individuals are looking for 
-          lively conversations, peaceful moments, or simply satisfying their cravings, 
-          we aim to create a comforting and enjoyable experience. Discover a perfect 
-          balance at Club &amp; Bay, a daily destination for good company and good food.
+          A warm and inviting space awaits at Club & Bay — where the love for food meets the calm rhythm of everyday life.
+          <br/>We're passionate about celebrating food in all its forms — from simple, wholesome recipes to rich culinary traditions. 
+          Everything we share is made with care, using fresh ideas and a personal touch.<br/>Whether you're here to try something new, 
+          enjoy a comforting classic, or just feed your curiosity, Club & Bay is your daily destination for delicious inspiration and 
+          feel-good food moments.
         </p>
         <div className="welcome-stats">
           <div className="stat">
@@ -40,7 +39,9 @@ const Welcome = () => {
             <p>Popular <strong>MASTER CHEFS</strong></p>
           </div>
         </div>
-        <button className="read-more-btn">READ MORE</button>
+        <Link to="/contact">
+          <button className="read-more-btn">Inquery</button>
+        </Link>
       </div>
     </section>
   );
