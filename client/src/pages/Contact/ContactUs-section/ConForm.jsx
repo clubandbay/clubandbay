@@ -61,20 +61,20 @@ const ConForm = () => {
 
             <h4>Location</h4>
             <p>
-              Restaurant St, Delicious city,<br />
-              London 9865, UK
+              03 Patel Plot, Kalina, Santacruz <br />
+              East. Mumbai - 400029.
             </p>
 
             <h4>Delivery Time</h4>
             <p>
-              9:00 am - 10:00am
+              7:00 am - 9:45 am
             </p>
 
             <h4>Days Open</h4>
             <p>
               Monday to Friday<br />
               & alt. Saturday <br />
-              9:00 am to 10:00 am
+              7:00 am - 9:45 am
             </p>
           </div>
         </div>

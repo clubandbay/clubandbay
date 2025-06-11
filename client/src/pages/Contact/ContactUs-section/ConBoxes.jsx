@@ -24,7 +24,7 @@ const ConBoxes = () => {
           <MdEmail className="icon" />
           <h3>Email Us</h3>
           <p>Drop us a message and we'll respond quickly.</p>
-          <a href="food@gmail.com" className="con-btn">Send Email</a>
+          <a href="mailto:food@gmail.com" className="con-btn">Send Email</a>
         </div>
 
         {/* Box 3: Call Us */}

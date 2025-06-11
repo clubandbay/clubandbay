@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar/navbar';
 import Home from './pages/Home/Home';
@@ -13,10 +13,21 @@ import ScrollToTop from './components/Others/ScrollToTop';
 import PrivacyPolicy from './components/PrivacyPolicy/PrivacyPolicy';
 import TermsConditions from './components/TermsConditions/TermsConditions';
 import Payment from './pages/Payment';
+import SplashScreen from './pages/SplashScreen';
 
 const App = () => {
+  const [showSplash, setShowSplash] = useState(true);
+
+  useEffect(() => {
+    const splashTimer = setTimeout(() => {
+      setShowSplash(false);
+    }, 5000); // 5 seconds
+
+    return () => clearTimeout(splashTimer);
+  }, []);
   return (
     <BrowserRouter>
+    {showSplash && <SplashScreen />}
     <ScrollToTop />
        <Navbar/>
 

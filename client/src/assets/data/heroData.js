@@ -103,7 +103,7 @@ export const ContactHero = {
   },
   buttonAbout: {
     text: 'Learn More',
-    link: '/payment',
+    link: '/about',
   },
   HF1: HomeFood10,
   HF2: HomeFood9,

@@ -20,7 +20,7 @@ const TermsConditions = () => {
         </p>
       </div>
 
-      <div className="space-y-6 text-gray-700 leading-relaxed">
+      <div className="!space-y-6 text-gray-700 leading-relaxed">
         <p>
           Welcome to Club & Bay BKC and our Terms of Service (“Terms”). These
           Terms are important and affect your legal rights, so please read them
@@ -54,7 +54,7 @@ const TermsConditions = () => {
         {/* Section 4 */}
         <div>
           <h2 className="text-2xl font-semibold !mb-3 text-gray-900">4. Accounts and Communications</h2>
-          <div className="space-y-3 !pl-4">
+          <div className="!space-y-3 !pl-4">
             <p><strong className="font-semibold">(a) Account Registration:</strong> To access and use the Service, we may require you to first register for an account (“Account”). You agree to provide accurate, current, and complete information and are liable for any activity that occurs on your Account.</p>
             <p><strong className="font-semibold">(b) Electronic Communications:</strong> By creating an Account, you consent to receive electronic communications from us (e.g., via email, WhatsApp, or app notifications). These may include transactional notices and promotional communications, from which you may opt-out.</p>
             <p><strong className="font-semibold">(c) SMS Communication:</strong> We may send you text messages for marketing, promotional, or transactional purposes. By providing consent, you authorize us to use automated technology to send texts to your number. Message and data rates may apply.</p>
@@ -91,7 +91,7 @@ const TermsConditions = () => {
         {/* Section 8 */}
         <div>
             <h2 className="text-2xl font-semibold !mb-3 text-gray-900">8. Food Safety, Nutrition & Allergens</h2>
-            <div className="space-y-3 !pl-4">
+            <div className="!space-y-3 !pl-4">
                 <p><strong className="font-semibold">(a) Food Safety:</strong> Consume delivered meals immediately or follow proper food safety guidelines for storage. Failure to follow safe handling practices may increase the risk of foodborne illness.</p>
                 <p><strong className="font-semibold">(b) Nutritional Information & Allergens:</strong> Nutrition information is based on standardized recipes and may vary. We cannot guarantee that the information displayed is always accurate or complete. All food is prepared in facilities with shared equipment, and cross-contact between ingredients (including vegetarian and non-vegetarian items) may occur.</p>
             </div>

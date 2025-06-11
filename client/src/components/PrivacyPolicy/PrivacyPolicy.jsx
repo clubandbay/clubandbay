@@ -11,7 +11,7 @@ const PrivacyPolicy = () => {
         Effective Date: June 11, 2025
       </p>
 
-      <div className="space-y-8">
+      <div className="!space-y-8">
         <p className="leading-relaxed">
           My Agro Food Chain (MFC), doing business as “Club & Bay BKC” (“Club & Bay
           BKC”, “we”, “us”, or “our”), is committed to protecting the privacy of
@@ -23,7 +23,7 @@ const PrivacyPolicy = () => {
 
         <div>
           <h2 className="text-2xl font-semibold !mb-3 text-gray-900">1. Information We Collect</h2>
-          <div className="space-y-4 !pl-2 leading-relaxed">
+          <div className="!space-y-4 !pl-2 leading-relaxed">
             <p>
               We may collect information about you in a variety of ways. The
               information we may collect via the Services includes:
@@ -66,7 +66,7 @@ const PrivacyPolicy = () => {
           <p className="!mb-2 leading-relaxed">
             We use the information we collect for various purposes, including to:
           </p>
-          <ul className="list-disc list-inside space-y-2 !pl-2 leading-relaxed">
+          <ul className="list-disc list-inside !space-y-2 !pl-2 leading-relaxed">
             <li>Provide, maintain, and improve our Services.</li>
             <li>Process your orders and transactions.</li>
             <li>
@@ -91,7 +91,7 @@ const PrivacyPolicy = () => {
           <p className="!mb-2 leading-relaxed">
             We may share your information in the following situations:
           </p>
-          <ul className="list-disc list-inside space-y-2 !pl-2 leading-relaxed">
+          <ul className="list-disc list-inside !space-y-2 !pl-2 leading-relaxed">
             <li>
               <strong>With Third-Party Platforms:</strong> If you place an
               order through a third-party platform, we will share your
