@@ -11,7 +11,7 @@ const WhyUs = () => {
     {
       number: '02',
       title: 'Fresh Ingredients',
-      description: ''
+      description: 'Enjoy food made with care using only fresh, high-quality ingredients. Every dish is thoughtfully prepared to bring out natural flavors and nourishing goodness.'
     },
     {
       number: '03',
