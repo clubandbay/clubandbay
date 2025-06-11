@@ -1,6 +1,6 @@
 import React from 'react';
 import Chef from '../../assets/man-eating.jpeg'
-import FoodBox from '../../assets/pack-box.jpeg'
+import FoodBox from '../../assets/juiceimages/AppleJuice.png'
 import RollFood from '../../assets/food_6.png'
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
@@ -96,7 +96,7 @@ const RestaurantBanner = () => {
 
             {/* Description */}
             <p className="text-gray-300 text-base sm:text-lg leading-relaxed">
-              Start your mornings the right way—with fresh, protein-packed meals crafted just for busy office workers. At To Take Healthy Food, we deliver delicious, cost-effective, and nutrient-rich breakfast and lunch straight from our home kitchen to your workplace. Our meals are built around quality ingredients, balanced nutrition, and a daily dose of energy to power your productivity. Forget fast food—this is real food, made
+              Start your mornings the right way—with fresh, protein-packed meals crafted just for busy office workers. At To Take Healthy Food, we deliver delicious, cost-effective, and nutrient-rich meal and juices straight from our home kitchen to your workplace. Our meals are built around quality ingredients, balanced nutrition, and a daily dose of energy to power your productivity. Forget fast food—this is real food, made
             </p>
 
             {/* Features Grid */}

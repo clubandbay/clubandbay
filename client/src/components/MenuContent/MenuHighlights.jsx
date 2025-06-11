@@ -12,7 +12,7 @@ const MenuHighlights = () => {
     },
     {
       id: 2,
-      title: "Home delivery",
+      title: "Office delivery",
       description: "Piping hot meals delivered straight from our kitchen to your office. Fast, reliable, and always on time.",
       icon: <FaMotorcycle className="!text-3xl !text-amber-500" />
     },

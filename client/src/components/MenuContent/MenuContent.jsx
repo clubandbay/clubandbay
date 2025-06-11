@@ -3,11 +3,12 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 import {
   FaPizzaSlice, FaHamburger, FaIceCream, FaGlassWhiskey,
-  FaFish, FaLeaf, FaStar, FaArrowRight, FaFire, FaSeedling
+  FaFish, FaLeaf, FaStar, FaArrowRight
 } from 'react-icons/fa';
-import { GiChickenLeg, GiMeat } from 'react-icons/gi';
-import { BiLeaf } from 'react-icons/bi';
 import foodApi from '../../assets/data/foodData';
+import { GiHotMeal } from "react-icons/gi";
+import NonVegIcon from '../../assets/nonVeg.png'
+import VegIcon from '../../assets/veg.png'
 
 const MenuContent = () => {
   const [activeTab, setActiveTab] = useState('week1'); // Default to WEEK1
@@ -19,10 +20,10 @@ const MenuContent = () => {
   const navigate = useNavigate();
 
   const menuCategories = [
-    { id: 'week1', name: 'WEEK1', icon: <FaPizzaSlice /> },
-    { id: 'week2', name: 'WEEK2', icon: <FaHamburger /> },
-    { id: 'week3', name: 'WEEK3', icon: <FaFish /> },
-    { id: 'week4', name: 'WEEK4', icon: <FaIceCream /> },
+    { id: 'week1', name: 'WEEK1', icon: <GiHotMeal /> },
+    { id: 'week2', name: 'WEEK2', icon: <GiHotMeal /> },
+    { id: 'week3', name: 'WEEK3', icon: <GiHotMeal /> },
+    { id: 'week4', name: 'WEEK4', icon: <GiHotMeal /> },
     { id: 'drinks', name: 'Drinks', icon: <FaGlassWhiskey /> },
     { id: 'salads', name: 'Salads', icon: <FaLeaf /> }
   ];
@@ -214,7 +215,7 @@ const MenuContent = () => {
                   <div className="!mb-12">
                     <div className="flex items-center justify-center !mb-8">
                       <div className="flex items-center bg-red-100 !px-6 !py-2 rounded-full">
-                        <GiMeat className="text-red-500 text-2xl !mr-2" />
+                        <img src={NonVegIcon} alt='Non-veg' className="w-5 h-5 !mr-2" />
                         <h3 className="text-xl font-bold text-red-500">Non-Vegetarian</h3>
                       </div>
                     </div>
@@ -231,7 +232,7 @@ const MenuContent = () => {
                   <div className="mt-12">
                     <div className="flex items-center justify-center !mb-8">
                       <div className="flex items-center bg-green-100 !px-6 !py-2 rounded-full">
-                        <BiLeaf className="text-green-600 text-2xl !mr-2" />
+                        <img src={VegIcon} alt='Veg' className=" w-5 h-5 !mr-2" />
                         <h3 className="text-xl font-bold text-green-600">Vegetarian</h3>
                       </div>
                     </div>
@@ -265,9 +266,9 @@ const MenuItem = ({ item, activeTab, handleItemClick }) => {
       {item.categ && (
         <div className={`absolute top-4 left-4 z-20 flex items-center ${item.categ === 'veg' ? 'text-green-600' : 'text-red-500'}`}>
           {item.categ === 'veg' ? (
-            <BiLeaf className="text-2xl" />
+            <img src={VegIcon} alt='Veg' className="w-5 h-5" />
           ) : (
-            <GiMeat className="text-2xl" />
+            <img src={NonVegIcon} alt='Non-veg' className="w-5 h-5" />
           )}
           <span className="!ml-1 text-xs font-bold uppercase">{item.categ}</span>
         </div>

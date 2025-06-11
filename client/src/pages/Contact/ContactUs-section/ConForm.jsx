@@ -1,8 +1,30 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import './ConForm.css';
 import { FaUser, FaCalendarAlt, FaClock } from 'react-icons/fa';
+import emailjs from '@emailjs/browser';
 
 const ConForm = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm(
+      import.meta.env.VITE_CONTACT_SERVICE_KEY,
+      import.meta.env.VITE_CONTACT_TEMPLATE_KEY,
+      form.current,
+      import.meta.env.VITE_CONTACT_PUBLIC_KEY
+    )
+      .then((result) => {
+        console.log(result.text);
+        alert('Message sent successfully!');
+        form.current.reset();
+      }, (error) => {
+        console.log(error.text);
+        alert('Failed to send the message, please try again.');
+      });
+  };
+
   return (
     <section className="con-section">
       <div className="con-wrapper">
@@ -11,23 +33,23 @@ const ConForm = () => {
           <p>
             Submit your Queries and we'll get back to you shortly.
           </p>
-          <form className="con-form">
+          <form className="con-form" ref={form} onSubmit={sendEmail}>
             <div className="row">
-              <input type="text" placeholder="Your Name" required />
-              <input type="tel" placeholder="Phone Number" required />
+              <input type="text" name="user_name" placeholder="Your Name" required />
+              <input type="tel" name="user_phone" placeholder="Phone Number" required />
             </div>
 
             <div className="row">
-              <input type="email" placeholder="Email" required />
+              <input type="email" name="user_email" placeholder="Email" required />
             </div>
 
             <div className="row">
-                  <input type="text" placeholder="Subject" required />
-              </div>
+              <input type="text" name="subject" placeholder="Subject" required />
+            </div>
 
-            <textarea placeholder="Message" required rows="4"></textarea>
+            <textarea name="message" placeholder="Message" required rows="4"></textarea>
 
-            <button type="submit">Quere</button>
+            <button type="submit">Submit Query</button>
           </form>
         </div>
 
@@ -52,7 +74,7 @@ const ConForm = () => {
             <p>
               Monday to Friday<br />
               & alt. Saturday <br />
-              9:00 am to 10:00 am 
+              9:00 am to 10:00 am
             </p>
           </div>
         </div>

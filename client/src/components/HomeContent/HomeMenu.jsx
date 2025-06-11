@@ -3,6 +3,8 @@ import foodApi from "../../assets/data/foodData";
 import { motion } from 'framer-motion';
 import { GiMeat } from 'react-icons/gi';
 import { BiLeaf } from 'react-icons/bi';
+import NonVegIcon from '../../assets/nonVeg.png'
+import VegIcon from '../../assets/veg.png'
 
 // Debounce utility to limit frequent updates
 const debounce = (func, wait) => {
@@ -217,9 +219,9 @@ const HomeMenu = () => {
           {!isDrinksTab && menuItems.filter(item => item.categ === 'non-veg').length > 0 && (
             <div className="!mb-12">
               <div className="flex items-center justify-center !mb-8">
-                <div className="flex items-center bg-red-900 bg-opacity-30 !px-6 !py-2 rounded-full border border-red-500">
-                  <GiMeat className="text-red-500 text-xl !mr-2" />
-                  <h3 className="text-xl font-bold text-red-400">NON-VEGETARIAN</h3>
+                <div className="flex items-center bg-red-300 bg-opacity-30 !px-6 !py-2 rounded-full border border-red-500">
+                  <img src={NonVegIcon} alt='Non-veg' className="w-5 h-5 !mr-2" />
+                  <h3 className="text-xl font-bold text-red-700">NON-VEGETARIAN</h3>
                 </div>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-y-10 gap-x-10">
@@ -235,7 +237,7 @@ const HomeMenu = () => {
             <div className="!mt-12">
               <div className="flex items-center justify-center !mb-8">
                 <div className="flex items-center bg-green-900 bg-opacity-30 !px-6 !py-2 rounded-full border border-green-500">
-                  <BiLeaf className="text-green-500 text-xl !mr-2" />
+                  <img src={VegIcon} alt='Veg' className="w-5 h-5 !mr-2" />
                   <h3 className="text-xl font-bold text-green-400">VEGETARIAN</h3>
                 </div>
               </div>
@@ -247,18 +249,6 @@ const HomeMenu = () => {
             </div>
           )}
         </div>
-
-        {/* Footer Note */}
-        <motion.p
-          className="text-center text-sm !mt-12 text-gray-400"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.3 }}
-        >
-          During winter daily from{" "}
-          <span className="text-[#e7b745] font-medium">7:00 pm</span> to{" "}
-          <span className="text-[#e7b745] font-medium">9:00 pm</span>
-        </motion.p>
       </div>
     </div>
   );
@@ -282,9 +272,9 @@ const MenuItem = ({ item, index }) => {
         />
         <div className={`absolute -top-2 -left-2 z-10 ${item.categ === 'veg' ? 'text-green-500' : 'text-red-500'}`}>
           {item.categ === 'veg' ? (
-            <BiLeaf className="text-xl" />
+            <img src={VegIcon} alt='Veg' className="w-5 h-5" />
           ) : (
-            <GiMeat className="text-xl" />
+            <img src={NonVegIcon} alt='Non-veg' className="h-5 w-5" />
           )}
         </div>
       </div>

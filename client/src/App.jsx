@@ -12,6 +12,7 @@ import FAQpage from './pages/FAQ/FAQpage';
 import ScrollToTop from './components/Others/ScrollToTop';
 import PrivacyPolicy from './components/Privacy-Policy/Privacy-Policy';
 import TermsConditions from './components/Terms-Conditions/terms-conditions';
+import Payment from './pages/Payment';
 
 const App = () => {
   return (
@@ -28,6 +29,7 @@ const App = () => {
          <Route path="/faq" element={<FAQpage />} />
          <Route path="/privacy-policy" element={<PrivacyPolicy/>} />
          <Route path="/terms-conditions" element={<TermsConditions/>} />
+         <Route path="/payment" element={<Payment />} />
          
          <Route path="/menu/:category/:slug" element={<FoodItemDetails />} />
        </Routes>
