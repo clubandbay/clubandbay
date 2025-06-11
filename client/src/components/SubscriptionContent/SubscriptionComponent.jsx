@@ -4,25 +4,31 @@ import { GiOysterPearl } from "react-icons/gi";
 import { DiRuby } from "react-icons/di";
 import { IoDiamond } from "react-icons/io5";
 import { GiEmerald } from "react-icons/gi";
+import { useNavigate } from 'react-router-dom';
 import SubscriptionImg from '../../assets/subcontbg.jpg'
 
 const SubscriptionComponent = () => {
   const [selectedPlan, setSelectedPlan] = useState('Club Ruby');
   const [hoveredCard, setHoveredCard] = useState(null);
   const [isVisible, setIsVisible] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     setIsVisible(true);
   }, []);
+
+  const handlePaymentRedirect = () => {
+    navigate('/payment');
+  };
 
   const plans = [
     {
       name: 'Club Crystal',
       days: '2 days/week',
       dname: 'Monday & Wednesday',
-      basePrice: 358,
+      basePrice: 360,
       gst: 18,
-      totalPrice: 376,
+      totalPrice: 378,
       bestFor: 'Light users / entry plan',
       icon: <FaGem className="w-6 h-6" />,
       gradient: 'from-cyan-500 to-blue-600',
@@ -35,9 +41,9 @@ const SubscriptionComponent = () => {
       name: 'Club Pearl',
       days: '3 days/week',
       dname: 'Monday, Wednesday & Friday',
-      basePrice: 537,
-      gst: 27,
-      totalPrice: 564,
+      basePrice: 539,
+      gst: 28,
+      totalPrice: 567,
       bestFor: 'Part-timers',
       icon: <GiOysterPearl className="w-6 h-6" />,
       gradient: 'from-slate-500 to-gray-600',
@@ -65,10 +71,8 @@ const SubscriptionComponent = () => {
       name: 'Club Emerald',
       days: '5 days/week',
       dname: 'Monday to Friday + 2 alternate working saturday only',
-      basePrice: 1374,
-      gst: 69,
-      totalPrice: 1443,
-      bestFor: 'High-frequency users',
+      slogan: 'A New Ritual is About to Begin',
+      status: "Coming Soon",
       icon: <GiEmerald className="w-6 h-6" />,
       gradient: 'from-emerald-500 to-green-600',
       bgColor: 'bg-emerald-500/5',
@@ -80,10 +84,8 @@ const SubscriptionComponent = () => {
       name: 'Club Diamond',
       days: '6 days/week',
       dname: 'Monday to Saturday',
-      basePrice: 1494,
-      gst: 75,
-      totalPrice: 1569,
-      bestFor: 'Premium daily subscribers',
+      slogan: 'Your Next Ritual is Taking Shape',
+      status: "Coming Soon",
       icon: <IoDiamond className="w-6 h-6" />,
       gradient: 'from-violet-500 to-purple-600',
       bgColor: 'bg-violet-500/5',
@@ -95,15 +97,11 @@ const SubscriptionComponent = () => {
 
   return (
     <div className="min-h-screen !py-12 !px-4 sm:!px-6 lg:!px-8"
-    style={{backgroundImage: `url(${SubscriptionImg})`}}>
+      style={{ backgroundImage: `url(${SubscriptionImg})` }}>
 
       <div className="relative max-w-7xl !mx-auto">
         {/* Header Section */}
         <div className={`text-center !mb-12 transform transition-all duration-1000 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
-          {/* <div className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white !px-6 !py-2 rounded-full text-sm font-medium !mb-4 shadow-lg">
-            <IoDiamond className="w-4 h-4" />
-            Premium Subscription Plans
-          </div> */}
           <h1 className="text-4xl md:text-6xl font-bold text-[#e7b745] !mb-4 bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text">
             Club & Bay
           </h1>
@@ -120,9 +118,8 @@ const SubscriptionComponent = () => {
           {plans.map((plan, index) => (
             <div
               key={plan.name}
-              className={`relative transform transition-all duration-700 text-[#e7b745] ${
-                isVisible ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'
-              }`}
+              className={`relative transform transition-all duration-700 text-[#e7b745] ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'
+                }`}
               style={{ transitionDelay: `${index * 150}ms` }}
               onMouseEnter={() => setHoveredCard(plan.name)}
               onMouseLeave={() => setHoveredCard(null)}
@@ -134,21 +131,20 @@ const SubscriptionComponent = () => {
                   </div>
                 </div>
               )}
-              
+
               <div
-                className={`relative h-full rounded-xl overflow-hidden transition-all duration-300 cursor-pointer group ${
-                  selectedPlan === plan.name 
-                    ? `ring-2 ring-offset-2 ring-offset-slate-900 ring-${plan.color}-500 scale-[1.02]` 
-                    : ''
-                }`}
+                className={`relative h-full rounded-xl overflow-hidden transition-all duration-300 cursor-pointer group ${selectedPlan === plan.name
+                  ? `ring-2 ring-offset-2 ring-offset-slate-900 ring-${plan.color}-500 scale-[1.02]`
+                  : ''
+                  }`}
                 onClick={() => setSelectedPlan(plan.name)}
               >
                 {/* Card Background */}
                 <div className={`absolute inset-0 ${plan.bgColor} ${plan.borderColor} border`}></div>
-                
+
                 {/* Glow Effect */}
                 <div className={`absolute inset-0 bg-gradient-to-br ${plan.gradient} opacity-0 group-hover:opacity-10 transition-opacity duration-300`}></div>
-                
+
                 {/* Card Content */}
                 <div className="relative !p-6 h-full flex flex-col">
                   {/* Plan Header */}
@@ -158,15 +154,17 @@ const SubscriptionComponent = () => {
                     </div>
                     <div className="text-right">
                       <span className="text-xs font-medium text-white">PER WEEK</span>
-                      <div className="text-2xl font-bold text-[#e7b745]">₹{plan.totalPrice}</div>
+                      <div className="text-2xl font-bold text-[#e7b745]">{plan.status ? (
+                        <div className="text-2xl font-bold text-[#e7b745]"> {plan.status}</div>
+                      ) : (<div className="text-2xl font-bold text-[#e7b745]"> ₹{plan.totalPrice}</div>)}</div>
                     </div>
                   </div>
-                  
+
                   {/* Plan Name */}
                   <h3 className="text-xl font-bold text-[#e7b745] !mb-1">
                     {plan.name}
                   </h3>
-                  
+
                   {/* Days */}
                   <p className="text-sm text-white !mb-2">
                     {plan.days}
@@ -176,54 +174,53 @@ const SubscriptionComponent = () => {
                   <p className="text-sm text-white !mb-6">
                     {plan.dname}
                   </p>
-                  
+
                   {/* Divider */}
                   <div className={`h-px bg-gradient-to-r ${plan.gradient} opacity-30 !my-4`}></div>
-                  
-                  {/* Best For */}
+
+                  {/* Slogan or Best For Section */}
                   <div className="!mb-6">
-                    <div className="text-xs text-white uppercase tracking-wider !mb-1">Best For</div>
-                    <div className="text-sm font-medium text-[#e7b745]">
-                      {plan.bestFor}
-                    </div>
+                    {plan.slogan ? (
+                      <div className="text-sm font-medium text-[#e7b745] italic">
+                        "{plan.slogan}"
+                      </div>
+                    ) : (
+                      <div>
+                        <div className="!mt-auto !space-y-2 text-sm">
+                          <div className="text-xs text-white uppercase tracking-wider !mb-1">Best For</div>
+                          <div className="text-sm font-medium text-[#e7b745]">
+                            {plan.bestFor}
+                          </div>
+                        </div>
+
+                        {/* Price Breakdown */}
+                        <div className="!mt-auto !space-y-2 text-sm">
+                          <div className="flex justify-between items-center text-gray-400">
+                            <span>Base Price:</span>
+                            <span className="font-medium">₹{plan.basePrice}</span>
+                          </div>
+                          <div className="flex justify-between items-center text-gray-400">
+                            <span>GST (5%):</span>
+                            <span className="font-medium">₹{plan.gst}</span>
+                          </div>
+                        </div>
+                      </div>
+                    )}
                   </div>
-                  
-                  {/* Price Breakdown */}
-                  <div className="!mt-auto !space-y-2 text-sm">
-                    <div className="flex justify-between items-center text-gray-400">
-                      <span>Base Price:</span>
-                      <span className="font-medium">₹{plan.basePrice}</span>
-                    </div>
-                    <div className="flex justify-between items-center text-gray-400">
-                      <span>GST (5%):</span>
-                      <span className="font-medium">₹{plan.gst}</span>
-                    </div>
-                  </div>
-                  
-                  {/* Select Button */}
-                  <button className={`w-full !mt-6 !py-3 rounded-lg font-medium text-sm transition-all duration-300 relative overflow-hidden ${
-                    selectedPlan === plan.name
-                      ? `bg-gradient-to-r ${plan.gradient} text-white shadow-lg`
-                      : 'bg-white/10 text-white hover:bg-white/20 backdrop-blur-sm'
-                  }`}>
-                    <div className="relative z-10 flex items-center justify-center gap-2">
-                      {selectedPlan === plan.name ? (
-                        <>
-                          <FaCheck className="w-4 h-4" />
-                          <span>Selected</span>
-                        </>
-                      ) : (
-                        <>
-                          <span>Select Plan</span>
-                          <FaArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
-                        </>
-                      )}
-                    </div>
-                  </button>
                 </div>
               </div>
             </div>
           ))}
+        </div>
+
+        {/* Call to Action */}
+        <div className={`text-center !my-12 transform transition-all duration-1000 delay-1000 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
+          <button
+            onClick={handlePaymentRedirect}
+            className="bg-gradient-to-r from-blue-600 to-purple-600 text-white !px-8 !py-4 rounded-xl font-bold text-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
+          >
+            Get Started Today
+          </button>
         </div>
 
         {/* Important Notes Section */}
@@ -239,8 +236,8 @@ const SubscriptionComponent = () => {
                   GST Information
                 </h3>
                 <p className="text-gray-300 leading-relaxed">
-                  GST will be charged separately on the invoice at 5%. Once our GST registration is official, 
-                  this will reflect in your tax-compliant bill. Until then, this format keeps pricing 
+                  GST will be charged separately on the invoice at 5%. Once our GST registration is official,
+                  this will reflect in your tax-compliant bill. Until then, this format keeps pricing
                   professional and ready for future scale.
                 </p>
               </div>
@@ -258,20 +255,13 @@ const SubscriptionComponent = () => {
                   Startup Compliance Notice
                 </h3>
                 <p className="text-gray-300 leading-relaxed">
-                  Club & Bay BKC is currently operating under startup compliance. We are not charging GST yet. 
-                  Once our official GST registration is complete, government taxes will be added as per norms. 
+                  Club & Bay BKC is currently operating under startup compliance. We are not charging GST yet.
+                  Once our official GST registration is complete, government taxes will be added as per norms.
                   Thank you for supporting our growing brand!
                 </p>
               </div>
             </div>
           </div>
-        </div>
-
-        {/* Call to Action */}
-        <div className={`text-center !mt-12 transform transition-all duration-1000 delay-1000 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
-          <button className="bg-gradient-to-r from-blue-600 to-purple-600 text-white !px-8 !py-4 rounded-xl font-bold text-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
-            Get Started Today
-          </button>
         </div>
       </div>
 

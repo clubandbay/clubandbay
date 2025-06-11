@@ -31,13 +31,13 @@ const Welcome = () => {
         </p>
         <div className="welcome-stats">
           <div className="stat">
-            <h2>15</h2>
+            <h2>25</h2>
             <p>Years of <strong>EXPERIENCE</strong></p>
           </div>
           <div className="stat-divider"></div>
           <div className="stat">
-            <h2>50</h2>
-            <p>Popular <strong>MASTER CHEFS</strong></p>
+            <h2>5</h2>
+            <p><strong>Food Specialist</strong></p>
           </div>
         </div>
         <button className="read-more-btn">READ MORE</button>

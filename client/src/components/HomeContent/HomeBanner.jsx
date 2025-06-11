@@ -178,9 +178,9 @@ const HomeBanner = () => {
               <FaStar className="text-2xl" />
             </div>
             <div>
-              <h3 className="font-bold text-xl text-[#0b3171] !mb-2">AWARD-WINNING SERVICE</h3>
+              <h3 className="font-bold text-xl text-[#0b3171] !mb-2">QUALITY ASSURANCE</h3>
               <p className="text-gray-600">
-                Recognized for excellence in hospitality and customer satisfaction
+                We deliver only the finest experiences and top-tier service
               </p>
             </div>
           </div>

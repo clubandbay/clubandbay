@@ -10,8 +10,8 @@ const WhyUs = () => {
     },
     {
       number: '02',
-      title: 'Welcoming Atmosphere',
-      description: 'Experience a warm, inviting, and comfortable atmosphere, ideal for meeting friends, working, or simply unwinding in our friendly cafe.'
+      title: 'Fresh Ingredients',
+      description: ''
     },
     {
       number: '03',
@@ -23,7 +23,7 @@ const WhyUs = () => {
   return (
     <section className="why-us aboutcard_bg">
       <div className="container">
-        <h2 className="title">Why Choose Our Restaurant</h2>
+        <h2 className="title">Why Choose Our Service</h2>
         <div className="why-us-grid">
           {cards.map((card, index) => (
             <div className="why-us-card" key={index}>

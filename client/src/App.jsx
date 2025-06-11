@@ -10,6 +10,7 @@ import Footer from './components/Footer/Footer';
 import FoodItemDetails from './pages/FoodItemDetails';
 import FAQpage from './pages/FAQ/FAQpage';
 import ScrollToTop from './components/Others/ScrollToTop';
+import Payment from './pages/Payment';
 
 const App = () => {
   return (
@@ -24,6 +25,7 @@ const App = () => {
          <Route path="/services" element={<Services />} />
          <Route path="/contact" element={<ContactUs />} />
          <Route path="/faq" element={<FAQpage />} />
+         <Route path="/payment" element={<Payment />} />
          
          <Route path="/menu/:category/:slug" element={<FoodItemDetails />} />
        </Routes>
